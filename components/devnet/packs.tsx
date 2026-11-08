@@ -63,15 +63,22 @@ function WelcomeClaim() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const request = useRef(0);
+  const read = useRef<AbortController | null>(null);
   const transaction = useDevnetTransaction(() => void refresh());
   async function refresh() {
     const id = ++request.current;
+    read.current?.abort();
+    const controller = new AbortController();
+    read.current = controller;
     setLoading(true);
     setSnapshot(null);
     setError("");
     transaction.setPlan(null);
     try {
-      const state = await new DevnetClient().readWelcome(address);
+      const state = await new DevnetClient().readWelcome(
+        address,
+        controller.signal,
+      );
       if (id === request.current) setSnapshot(state);
     } catch (error) {
       if (id === request.current)
@@ -81,6 +88,7 @@ function WelcomeClaim() {
             : "Could not read welcome state.",
         );
     } finally {
+      if (read.current === controller) read.current = null;
       if (id === request.current) setLoading(false);
     }
   }
@@ -90,6 +98,7 @@ function WelcomeClaim() {
     setLoading(false);
     request.current++;
     return () => {
+      read.current?.abort();
       request.current++;
     };
   }, [address]);
@@ -153,14 +162,22 @@ function PackCard({ id }: { id: string }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const request = useRef(0);
+  const read = useRef<AbortController | null>(null);
   const transaction = useDevnetTransaction(() => void refresh());
   async function refresh() {
     const number = ++request.current;
+    read.current?.abort();
+    const controller = new AbortController();
+    read.current = controller;
     setLoading(true);
     setError("");
     transaction.setPlan(null);
     try {
-      const state = await new DevnetClient().readPack(id, address);
+      const state = await new DevnetClient().readPack(
+        id,
+        address,
+        controller.signal,
+      );
       if (number === request.current) setSnapshot(state);
     } catch (error) {
       if (number === request.current) {
@@ -170,6 +187,7 @@ function PackCard({ id }: { id: string }) {
         );
       }
     } finally {
+      if (read.current === controller) read.current = null;
       if (number === request.current) setLoading(false);
     }
   }
@@ -179,13 +197,15 @@ function PackCard({ id }: { id: string }) {
     setLoading(false);
     request.current++;
     return () => {
+      read.current?.abort();
       request.current++;
     };
   }, [address]);
   useEffect(() => {
     if (!snapshot?.player?.pending) return;
     const timer = setInterval(() => {
-      if (!transaction.busy && !transaction.plan) void refresh();
+      if (!read.current && !transaction.busy && !transaction.plan)
+        void refresh();
     }, 8000);
     return () => clearInterval(timer);
   }, [snapshot?.player?.pending, transaction.busy, transaction.plan, address]); // eslint-disable-line react-hooks/exhaustive-deps

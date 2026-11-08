@@ -46,6 +46,7 @@ function FaucetCard({ id }: { id: string }) {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const generation = useRef(0);
+  const read = useRef<AbortController | null>(null);
   const transaction = useDevnetTransaction(() => void refresh());
   async function refresh() {
     if (!address) {
@@ -53,12 +54,17 @@ function FaucetCard({ id }: { id: string }) {
       return;
     }
     const current = ++generation.current;
+    read.current?.abort();
+    const controller = new AbortController();
+    read.current = controller;
     setLoading(true);
     setError("");
     setSnapshot(null);
     transaction.setPlan(null);
     try {
-      const state = await readFaucet(id, address);
+      const state = await readFaucet(id, address, {
+        signal: controller.signal,
+      });
       if (current === generation.current) setSnapshot(state);
     } catch (error) {
       if (current === generation.current)
@@ -68,6 +74,7 @@ function FaucetCard({ id }: { id: string }) {
             : "Could not check this faucet.",
         );
     } finally {
+      if (read.current === controller) read.current = null;
       if (current === generation.current) setLoading(false);
     }
   }
@@ -77,6 +84,7 @@ function FaucetCard({ id }: { id: string }) {
     setError("");
     setLoading(false);
     return () => {
+      read.current?.abort();
       generation.current++;
     };
   }, [address]);

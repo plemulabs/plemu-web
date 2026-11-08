@@ -95,16 +95,24 @@ function MarketTrade({ id, onClose }: { id: string; onClose: () => void }) {
   const [slippage, setSlippage] = useState("100");
   const [buyMode, setBuyMode] = useState<"sol" | "tokens">("sol");
   const generation = useRef(0);
+  const read = useRef<AbortController | null>(null);
   const panel = useRef<HTMLElement>(null);
   const transaction = useDevnetTransaction(() => void refresh());
   async function refresh() {
     const current = ++generation.current;
+    read.current?.abort();
+    const controller = new AbortController();
+    read.current = controller;
     setLoading(true);
     setError("");
     setState(null);
     transaction.setPlan(null);
     try {
-      const snapshot = await new DevnetClient().readMarket(id, address);
+      const snapshot = await new DevnetClient().readMarket(
+        id,
+        address,
+        controller.signal,
+      );
       if (current === generation.current) setState(snapshot);
     } catch (error) {
       if (current === generation.current)
@@ -114,12 +122,14 @@ function MarketTrade({ id, onClose }: { id: string; onClose: () => void }) {
             : "Market unavailable. Try refreshing.",
         );
     } finally {
+      if (read.current === controller) read.current = null;
       if (current === generation.current) setLoading(false);
     }
   }
   useEffect(() => {
     void refresh();
     return () => {
+      read.current?.abort();
       generation.current++;
     }; /* Identity changes invalidate every preview. */
   }, [id, address]); // eslint-disable-line react-hooks/exhaustive-deps

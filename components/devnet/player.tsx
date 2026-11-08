@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { readBoundedResponse } from "../../lib/bounded-response";
 import { useBrowserLibrary, systemNames } from "./library-provider";
 import {
   readBrowserSettings,
@@ -9,18 +10,27 @@ import {
 } from "../../lib/browser-settings";
 
 export function BrowserPlayer({ slug }: { slug: string }) {
+  return <BrowserPlayerSession key={slug} slug={slug} />;
+}
+
+function BrowserPlayerSession({ slug }: { slug: string }) {
   const { games, favorites, toggleFavorite, removeImport } =
     useBrowserLibrary();
   const game = games.find((item) => item.slug === slug);
   const [playing, setPlaying] = useState(false);
+  const [starting, setStarting] = useState(false);
   const [message, setMessage] = useState("");
   const frame = useRef<HTMLIFrameElement>(null);
   const payload = useRef<ArrayBuffer | null>(null);
   const mounted = useRef(true);
+  const download = useRef<AbortController | null>(null);
   useEffect(() => {
     mounted.current = true;
+    setStarting(false);
     return () => {
       mounted.current = false;
+      download.current?.abort();
+      download.current = null;
       payload.current = null;
     };
   }, []);
@@ -71,32 +81,47 @@ export function BrowserPlayer({ slug }: { slug: string }) {
       </div>
     );
   async function start() {
-    if (!game) return;
+    if (!game || download.current) return;
+    const controller = new AbortController();
+    download.current = controller;
+    setStarting(true);
     setMessage("Checking your game file…");
     try {
-      const response = game.file ? null : await fetch(game.rom);
+      const response = game.file
+        ? null
+        : await fetch(game.rom, {
+            signal: controller.signal,
+            redirect: "error",
+          });
       if (response && !response.ok)
         throw new Error("Game download failed. Please try again.");
+      if (!mounted.current || controller.signal.aborted) return;
       const bytes = game.file
         ? await game.file.arrayBuffer()
-        : await response!.arrayBuffer();
+        : await readBoundedResponse(response!, game.size);
+      if (!mounted.current || controller.signal.aborted) return;
       const hash = Array.from(
         new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)),
         (value) => value.toString(16).padStart(2, "0"),
       ).join("");
       if (hash !== game.sha256 || bytes.byteLength !== game.size)
         throw new Error("The game file failed its integrity check.");
-      if (!mounted.current) return;
+      if (!mounted.current || controller.signal.aborted) return;
       payload.current = bytes;
       setPlaying(true);
       setMessage("Loading the local player…");
     } catch (error) {
-      if (mounted.current)
+      if (mounted.current && !controller.signal.aborted)
         setMessage(
           error instanceof Error
             ? error.message
             : "Could not start the player.",
         );
+    } finally {
+      if (download.current === controller) {
+        download.current = null;
+        if (mounted.current) setStarting(false);
+      }
     }
   }
   return (
@@ -141,8 +166,12 @@ export function BrowserPlayer({ slug }: { slug: string }) {
         ) : (
           <>
             <img src={game.cover} alt={`${game.title} cover`} />
-            <button className="dn-button" onClick={() => void start()}>
-              ▶ Start playing
+            <button
+              className="dn-button"
+              disabled={starting}
+              onClick={() => void start()}
+            >
+              {starting ? "Checking game…" : "▶ Start playing"}
             </button>
           </>
         )}

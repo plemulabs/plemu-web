@@ -25,11 +25,11 @@ vi.mock("@solana/wallet-adapter-react", () => ({
 vi.mock("../../../lib/devnet", async (importOriginal) => ({
   ...(await importOriginal<typeof import("../../../lib/devnet")>()),
   DevnetClient: class {
-    readWelcome(address: string | null) {
-      return state.readWelcome(address);
+    readWelcome(address: string | null, signal: AbortSignal) {
+      return state.readWelcome(address, signal);
     }
-    readPack(id: string, address: string | null) {
-      return state.readPack(id, address);
+    readPack(id: string, address: string | null, signal: AbortSignal) {
+      return state.readPack(id, address, signal);
     }
   },
   readFaucet: (...args: unknown[]) => state.readFaucet(...args),
@@ -97,6 +97,10 @@ describe.each(["switch", "disconnect"] as const)(
         ).disabled,
       ).toBe(true);
       changeIdentity(rerender, <DevnetPacks />);
+      expect(
+        state.readWelcome.mock.calls.at(-1)?.[1]?.aborted ??
+          state.readPack.mock.calls.at(-1)?.[2]?.aborted,
+      ).toBe(true);
       const refresh = screen.getByRole("button", {
         name: "Check welcome eligibility",
       });
@@ -148,6 +152,10 @@ describe.each(["switch", "disconnect"] as const)(
         ).disabled,
       ).toBe(true);
       changeIdentity(rerender, <DevnetPacks />);
+      expect(
+        state.readWelcome.mock.calls.at(-1)?.[1]?.aborted ??
+          state.readPack.mock.calls.at(-1)?.[2]?.aborted,
+      ).toBe(true);
       const refresh = screen.getAllByRole("button", {
         name: "Check pack & recovery",
       })[0];
@@ -188,6 +196,9 @@ describe.each(["switch", "disconnect"] as const)(
         ).disabled,
       ).toBe(true);
       changeIdentity(rerender, <DevnetFaucets />);
+      expect(state.readFaucet.mock.calls.at(-1)?.[2]?.signal.aborted).toBe(
+        true,
+      );
       const refresh = screen.getAllByRole("button", {
         name: "Check balance & eligibility",
       })[0];

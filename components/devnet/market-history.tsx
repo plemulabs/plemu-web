@@ -27,17 +27,28 @@ export function DevnetMarketHistory({ id }: { id: string }) {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const generation = useRef(0);
+  const read = useRef<AbortController | null>(null);
   useEffect(() => {
+    setHistory(null);
+    setError("");
+    setLoading(false);
     return () => {
+      read.current?.abort();
       generation.current++;
     };
   }, [id]);
   async function refresh() {
     const current = ++generation.current;
+    read.current?.abort();
+    const controller = new AbortController();
+    read.current = controller;
     setLoading(true);
     setError("");
     try {
-      const result = await readMarketHistory(id, { limit: 8 });
+      const result = await readMarketHistory(id, {
+        limit: 8,
+        signal: controller.signal,
+      });
       if (current === generation.current) setHistory(result);
     } catch (error) {
       if (current === generation.current) {
@@ -49,6 +60,7 @@ export function DevnetMarketHistory({ id }: { id: string }) {
         );
       }
     } finally {
+      if (read.current === controller) read.current = null;
       if (current === generation.current) setLoading(false);
     }
   }

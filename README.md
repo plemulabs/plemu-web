@@ -39,6 +39,10 @@ A wallet-scoped Web Lock prevents overlapping approvals. Exact signed bytes are 
 
 See [protocol provenance](lib/devnet/PROVENANCE.md) and the [transaction boundary](lib/browser-transactions.ts).
 
+Fresh snapshots read independent account and rent data concurrently after network and program checks. Reads that depend on a confirmed slot remain ordered; chain state is not cached. Leaving a panel or changing wallets aborts its pending reads, and pack polling waits for the current read to finish.
+
+RPC responses are capped at 2,000,000 decoded bytes while streaming. Game downloads are capped at the catalog's expected size, then checked against their SHA-256 before opening the player. Repeated start input shares one download; navigation aborts it and discards late results.
+
 ## Players and content
 
 Players run in opaque-origin iframes with self-hosted assets, storage caches and multiplayer disabled. They receive selected game bytes and have no wallet interface. Browser and Seeker performance/save formats can differ.
@@ -64,3 +68,5 @@ Each project builds independently. Native offline copies are maintained in [plem
 ## Hosting
 
 For `devnet.plemu.xyz`, use repository root `.`, the Next.js framework, `npm ci`, `npm run build` and framework-default output. Retain the configured player headers and redirects. The default public Devnet endpoint requires no private environment variables. Verify wallet behavior and RPC access on the deployed HTTPS origin.
+
+Application responses restrict framing to the same origin and disable MIME sniffing, external form submissions and embedded objects. Player frames retain their separate resource policy and opaque-origin CORS support. The application policy does not restrict script sources; it is not a complete script-injection defense.

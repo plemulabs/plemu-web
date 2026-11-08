@@ -1,3 +1,4 @@
+import { readBoundedResponse } from "../bounded-response";
 import {
   DEVNET_MARKETS,
   DEVNET_PACKS,
@@ -164,9 +165,9 @@ export function createReadTransport(
       });
       if (!response.ok)
         throw new Error(`Devnet RPC unavailable (HTTP ${response.status}).`);
-      const raw = await response.text();
-      if (raw.length > 2_000_000)
-        throw new Error("RPC response exceeds the bounded read size.");
+      const raw = new TextDecoder().decode(
+        await readBoundedResponse(response, 2_000_000),
+      );
       const data = record(JSON.parse(raw));
       if (
         data.error ||
@@ -270,7 +271,10 @@ export class DevnetClient {
       CLOCK,
       ...(wallet ? [wallet] : []),
     ];
-    const { accounts: a, slot } = await this.accounts(keys, 0n, signal);
+    const [{ accounts: a, slot }, rent] = await Promise.all([
+      this.accounts(keys, 0n, signal),
+      this.rent(41, signal),
+    ]);
     const protocol = decodeProtocol(a[0]),
       market = decodeMarket(a[1], config),
       mintSupply = validateMint(a[2], market);
@@ -288,8 +292,7 @@ export class DevnetClient {
     }
     if (totalCustody > mintSupply)
       throw new Error("Protected custody exceeds mint supply.");
-    const rent = await this.rent(41, signal),
-      trackedSol = [
+    const trackedSol = [
         market.curveQuote,
         market.poolQuote,
         u64(
@@ -396,12 +399,17 @@ export class DevnetClient {
       receipt = wallet
         ? pda("welcome-claim", key(c.campaign), key(wallet))[0]
         : null;
-    const { accounts: a, slot } = await this.accounts(
-        [c.campaign, c.treasury, CLOCK, ...(receipt ? [receipt] : [])],
-        0n,
-        signal,
-      ),
-      joined = new Uint8Array(bytes("plemu-welcome-v1").length + 192);
+    const [{ accounts: a, slot }, receiptRent, sponsorFloor] =
+      await Promise.all([
+        this.accounts(
+          [c.campaign, c.treasury, CLOCK, ...(receipt ? [receipt] : [])],
+          0n,
+          signal,
+        ),
+        this.rent(113, signal),
+        this.rent(0, signal),
+      ]);
+    const joined = new Uint8Array(bytes("plemu-welcome-v1").length + 192);
     joined.set(bytes("plemu-welcome-v1"));
     c.games.forEach((g, i) =>
       joined.set(
@@ -413,8 +421,6 @@ export class DevnetClient {
       campaign = decodeWelcome(a[0], c, digest),
       sponsor = a[1];
     if (sponsor) required(sponsor, SYSTEM, 0);
-    const receiptRent = await this.rent(113, signal),
-      sponsorFloor = await this.rent(0, signal);
     if (receiptRent === 0n)
       throw new Error("Welcome receipt rent unavailable.");
     let alreadyClaimed = false,
@@ -520,7 +526,11 @@ export class DevnetClient {
       ...markets,
       ...(drawAddress ? [drawAddress] : []),
     ];
-    const stock = await this.accounts(inventory, slot, signal);
+    const [stock, drawRent, playerRent] = await Promise.all([
+      this.accounts(inventory, slot, signal),
+      this.rent(176, signal),
+      player ? Promise.resolve(0n) : this.rent(90, signal),
+    ]);
     let available = pool.tokenBonus > 0n ? (1n << 64n) - 1n : 0n,
       ownedMask = 0;
     for (let i = 0; i < pool.count; i++) {
@@ -586,8 +596,6 @@ export class DevnetClient {
                   ? "delivered"
                   : "verifying-delivery";
     }
-    const drawRent = await this.rent(176, signal),
-      playerRent = player ? 0n : await this.rent(90, signal);
     return Object.freeze({
       ...this.base(stock.slot, chainTime, wallet),
       kind: "pack",
