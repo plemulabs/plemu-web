@@ -1,0 +1,379 @@
+{
+  "games": [
+    {
+      "id": "gb/adjustris",
+      "romSha256": "b6c8affe6d906419cfc99ff459718f33a1868af03254a2f65cea2a9430394712",
+      "coverAsset": "HomebrewCovers/be11e058c0b0cca3fedb135411ebc570cad3455263cb92322944c39593314e40",
+      "bannerAsset": "HomebrewBanners/d34151a53aaabbc29ba44b9f208a699675a58d8c9e27c0b4eff6d84469afc9ed",
+      "sourceUrl": "https://github.com/tbsp/Adjustris",
+      "artSource": "Native title/game capture of reviewed ROM SHA-256 b6c8affe6d906419cfc99ff459718f33a1868af03254a2f65cea2a9430394712",
+      "transformed": false
+    },
+    {
+      "id": "gb/black-castle",
+      "romSha256": "1f84ee8b1f65775bf9f50a130a49531aa825345ad1fee955bf35a532f7d24cf1",
+      "coverAsset": "HomebrewCovers/7fa1e2b35814029e1901a4d0fd0478734399d5f550145f29d754bd025dbf6e87",
+      "bannerAsset": "HomebrewBanners/7fa1e2b35814029e1901a4d0fd0478734399d5f550145f29d754bd025dbf6e87",
+      "sourceUrl": "https://user0x7f.itch.io/black-castle",
+      "artSource": "https://img.itch.zone/aW1nLzY4MzE0MzIuanBn/original/Uzgfyb.jpg",
+      "transformed": false
+    },
+    {
+      "id": "gb/bomberman",
+      "romSha256": "7a9dca21e8416ecc098242e19320cc28a3e11edfd0292f924f45af1174088f8e",
+      "coverAsset": "HomebrewCovers/84953e3f931a312fdbb01f1f729a8a9f94c2a21fe72e2b796cb0c70cf3878574",
+      "bannerAsset": "HomebrewBanners/e5c90fe3d95de783a235de1d322a8f739804709e337af845a1d2bed286dce078",
+      "sourceUrl": "https://hh.gbdev.io/game/bomberman-tm",
+      "artSource": "Native title/game capture of reviewed ROM SHA-256 7a9dca21e8416ecc098242e19320cc28a3e11edfd0292f924f45af1174088f8e",
+      "transformed": false
+    },
+    {
+      "id": "gb/dawn-will-come",
+      "romSha256": "3a3b9881b5a3a3708e217efd73f443f6a97782d3b0d3a2086e1a00ac176e5e9f",
+      "coverAsset": "HomebrewCovers/df8427fed79e7d452f0157c449646c00b6e682ed379281b4d84135cda10164f5",
+      "bannerAsset": "HomebrewBanners/df8427fed79e7d452f0157c449646c00b6e682ed379281b4d84135cda10164f5",
+      "sourceUrl": "https://eishiya.itch.io/dawn-will-come",
+      "artSource": "https://img.itch.zone/aW1nLzcwMDE2NzUucG5n/original/ErvPJw.png",
+      "transformed": false
+    },
+    {
+      "id": "gb/flappy-bird-gameboy",
+      "romSha256": "78b97ee95ea47fae44fd7d96c299fdb06eaea9e2f399a51bdd8ce0544f88e7e6",
+      "coverAsset": "HomebrewCovers/a62631238d86a4574a2decd0a828f6998136042a714fe59788cda3a356e0558f",
+      "bannerAsset": "HomebrewBanners/a62631238d86a4574a2decd0a828f6998136042a714fe59788cda3a356e0558f",
+      "sourceUrl": "https://www.gamebrew.org/wiki/Flappy_Bird_Gameboy_GB",
+      "artSource": "Native title/game capture of reviewed ROM SHA-256 78b97ee95ea47fae44fd7d96c299fdb06eaea9e2f399a51bdd8ce0544f88e7e6",
+      "transformed": false
+    },
+    {
+      "id": "gb/libbet",
+      "romSha256": "3607412031c8287cf878299ce96e581e85b852dde703806343b95576fa3ff1a9",
+      "coverAsset": "HomebrewCovers/a64eba3b3275b3e9ee717ecd145606c1ca12e94222c0659cf2c1231e784df529",
+      "bannerAsset": "HomebrewBanners/2c5d9cbf6653db268f58e0892ab862c862e1813c3e07cb82fe9860d72f50ef9d",
+      "sourceUrl": "https://github.com/pinobatch/libbet",
+      "artSource": "Cover: Plemu AI-assisted illustration guided by Damian Yerrick art; banner: unchanged author repocard. https://github.com/pinobatch/libbet",
+      "transformed": true,
+      "artworkDetails": {
+        "coverFile": "presentation-cover-v2.png",
+        "bannerFile": "presentation-banner-v2.png",
+        "fileSha256": {
+          "presentation-cover-v2.png": "a64eba3b3275b3e9ee717ecd145606c1ca12e94222c0659cf2c1231e784df529",
+          "presentation-banner-v2.png": "2c5d9cbf6653db268f58e0892ab862c862e1813c3e07cb82fe9860d72f50ef9d"
+        },
+        "sourceUrl": "https://github.com/pinobatch/libbet",
+        "authorPage": "https://github.com/pinobatch/libbet",
+        "type": "plemu-ai-assisted-cover-and-author-repocard-banner",
+        "transformed": true,
+        "artSource": "Cover: Plemu AI-assisted illustration guided by Damian Yerrick art; banner: unchanged author repocard. https://github.com/pinobatch/libbet",
+        "sources": [
+          {
+            "role": "cover-reference-and-banner",
+            "name": "libbet-Libbet-repocard.png",
+            "url": "https://raw.githubusercontent.com/pinobatch/libbet/1232e71dc1ac852786ad9825316e19d2b341bc4a/07-biggar/Libbet-repocard.png",
+            "sha256": "2c5d9cbf6653db268f58e0892ab862c862e1813c3e07cb82fe9860d72f50ef9d",
+            "size": [1280, 640]
+          },
+          {
+            "role": "cover-reference",
+            "name": "libbet-title_mockup.png",
+            "url": "https://raw.githubusercontent.com/pinobatch/libbet/1232e71dc1ac852786ad9825316e19d2b341bc4a/07-biggar/title_mockup.png",
+            "sha256": "8ee43e9b7ef1f606533137f737204cb8c02a70bd91489bc20f32a8a3f6e381a8",
+            "size": [160, 144]
+          }
+        ],
+        "generatedCover": {
+          "method": "AI-assisted illustration",
+          "credit": "Plemu AI-assisted presentation illustration; original game/art credits unchanged",
+          "notOfficialBoxArt": true,
+          "notGameplayScreenshot": true
+        }
+      }
+    },
+    {
+      "id": "gb/quartet",
+      "romSha256": "5f0e832fc1dfa7642707717b7b57fe6c46db54c3073ecacb3cb666fe62d92473",
+      "coverAsset": "HomebrewCovers/bdd057d08436a82eae2f4a5d1c4dd0cf3e45c9e663cb0cff9400f6cd0930d03f",
+      "bannerAsset": "HomebrewBanners/733dbe462694f184071f1defda8370d2b11a847d20ea7cfaf8bca91d195cc2f7",
+      "sourceUrl": "https://makrill.itch.io/quartet",
+      "artSource": "Original flat label and title image by Mackerel Interactive; label from supplied quartet_gb.zip; https://makrill.itch.io/quartet",
+      "transformed": false,
+      "artworkDetails": {
+        "coverFile": "presentation-cover-v2.jpg",
+        "bannerFile": "presentation-banner-v2.png",
+        "fileSha256": {
+          "presentation-cover-v2.jpg": "bdd057d08436a82eae2f4a5d1c4dd0cf3e45c9e663cb0cff9400f6cd0930d03f",
+          "presentation-banner-v2.png": "733dbe462694f184071f1defda8370d2b11a847d20ea7cfaf8bca91d195cc2f7"
+        },
+        "sourceUrl": "https://makrill.itch.io/quartet",
+        "authorPage": "https://makrill.itch.io/quartet",
+        "type": "unaltered-author-flat-label-and-title-image",
+        "transformed": false,
+        "artSource": "Original flat label and title image by Mackerel Interactive; label from supplied quartet_gb.zip; https://makrill.itch.io/quartet",
+        "sources": [
+          {
+            "role": "cover",
+            "type": "unaltered-author-flat-label",
+            "sourceUrl": "https://makrill.itch.io/quartet",
+            "acquisition": "Author flat label dmg-qrt-scn.jpg from quartet_gb.zip."
+          },
+          {
+            "role": "banner",
+            "name": "quartet-3",
+            "url": "https://img.itch.zone/aW1hZ2UvODc2MjY0LzQ5OTU1MzEucG5n/original/4d4pd6.png",
+            "sha256": "733dbe462694f184071f1defda8370d2b11a847d20ea7cfaf8bca91d195cc2f7",
+            "size": [512, 448]
+          }
+        ]
+      }
+    },
+    {
+      "id": "gb/rayslinger",
+      "romSha256": "f367848449424c9ac76bd5d31767837705060c79a30a9620e965ea8a1bf7ed41",
+      "coverAsset": "HomebrewCovers/8d7b421e5e3ba525ea1e95be94b154785b4980e1471a1e73aff570ab3e6128ac",
+      "bannerAsset": "HomebrewBanners/202de53a9b38a355e0fa8b1c1382e0aca64490e5d1010dbffa458817a98626f4",
+      "sourceUrl": "https://unicore.itch.io/rayslinger",
+      "artSource": "Cover: Plemu AI-assisted illustration guided by Unicore art; banner: unchanged author gameplay image. https://unicore.itch.io/rayslinger",
+      "transformed": true,
+      "artworkDetails": {
+        "coverFile": "presentation-cover-v2.png",
+        "bannerFile": "presentation-banner-v2.png",
+        "fileSha256": {
+          "presentation-cover-v2.png": "8d7b421e5e3ba525ea1e95be94b154785b4980e1471a1e73aff570ab3e6128ac",
+          "presentation-banner-v2.png": "202de53a9b38a355e0fa8b1c1382e0aca64490e5d1010dbffa458817a98626f4"
+        },
+        "sourceUrl": "https://unicore.itch.io/rayslinger",
+        "authorPage": "https://unicore.itch.io/rayslinger",
+        "type": "plemu-ai-assisted-cover-and-author-gameplay-banner",
+        "transformed": true,
+        "artSource": "Cover: Plemu AI-assisted illustration guided by Unicore art; banner: unchanged author gameplay image. https://unicore.itch.io/rayslinger",
+        "sources": [
+          {
+            "role": "cover-reference-and-banner",
+            "name": "rayslinger-0",
+            "url": "https://img.itch.zone/aW1hZ2UvMTEzMDc2OS82NTkzNDg0LnBuZw==/original/p88T2g.png",
+            "sha256": "202de53a9b38a355e0fa8b1c1382e0aca64490e5d1010dbffa458817a98626f4",
+            "size": [1331, 1200]
+          },
+          {
+            "role": "cover-character-reference",
+            "sourceUrl": "https://img.itch.zone/aW1nLzczNDc0NTQucG5n/original/yQaNle.png",
+            "sha256": "eb7561740b8937ceb2a40aec8d0f6f9225835bc9d6f1886d46909b4a2cbf07bd"
+          }
+        ],
+        "generatedCover": {
+          "method": "AI-assisted illustration",
+          "credit": "Plemu AI-assisted presentation illustration; original game/art credits unchanged",
+          "notOfficialBoxArt": true,
+          "notGameplayScreenshot": true
+        }
+      }
+    },
+    {
+      "id": "gb/rhythm-land",
+      "romSha256": "820b4e543bc1afb80b66be81aca64f429e97c8c0f4b5377350353788381ab160",
+      "coverAsset": "HomebrewCovers/9a84a0048d4c870fb1a7fdebec30915597e1cfd37a63127d46fbf5c9f9ecb2c0",
+      "bannerAsset": "HomebrewBanners/9a84a0048d4c870fb1a7fdebec30915597e1cfd37a63127d46fbf5c9f9ecb2c0",
+      "sourceUrl": "https://martendo.itch.io/rhythm-land",
+      "artSource": "https://img.itch.zone/aW1nLzcyMTczNTUucG5n/original/56VH%2Bz.png",
+      "transformed": false
+    },
+    {
+      "id": "gb/scorching-light",
+      "romSha256": "52c3669a986b7d720480799a18d9ba717af95ecc7d6ce6650c72a31d3e52d261",
+      "coverAsset": "HomebrewCovers/9ebc5cf44dcf46e72d8ec8b99c9e9743b9883c8148565571de8525b2cc7523d2",
+      "bannerAsset": "HomebrewBanners/9ebc5cf44dcf46e72d8ec8b99c9e9743b9883c8148565571de8525b2cc7523d2",
+      "sourceUrl": "https://pasquiindustry.itch.io/scorching-light",
+      "artSource": "https://img.itch.zone/aW1nLzI4ODc5ODEyLnBuZw==/original/3TbFgT.png",
+      "transformed": false
+    },
+    {
+      "id": "gb/super-impostor-bros",
+      "romSha256": "bc6cbc2698808c69d9b9e3263c5d17df37c7b3a54a3ce31e85cfd9dfe71e3047",
+      "coverAsset": "HomebrewCovers/2d726dd922cd967a95b4553d131cf1d001f4f79b3f127859d1f30a6ae648957e",
+      "bannerAsset": "HomebrewBanners/2d726dd922cd967a95b4553d131cf1d001f4f79b3f127859d1f30a6ae648957e",
+      "sourceUrl": "https://lumpytouch.itch.io/super-impostor-bros",
+      "artSource": "https://img.itch.zone/aW1nLzU0OTMxMTYucG5n/original/Gp5gDc.png",
+      "transformed": false
+    },
+    {
+      "id": "gb/tobu-tobu-girl-deluxe",
+      "romSha256": "0a0e8018dbbc8d7f8cd99f05e7cdc7b4cc9e358ecfe9377ebfb2291a84c6e310",
+      "coverAsset": "HomebrewCovers/ec3c38e1731572e2a4ebb3eb89dcf44a8cb4ca76f309074b53e58b238d04969d",
+      "bannerAsset": "HomebrewBanners/ec3c38e1731572e2a4ebb3eb89dcf44a8cb4ca76f309074b53e58b238d04969d",
+      "sourceUrl": "https://tangramgames.dk/tobutobugirldx/",
+      "artSource": "https://img.itch.zone/aW1nLzI2Mjg1MjcucG5n/original/8xica8.png",
+      "transformed": false
+    },
+    {
+      "id": "gb/unearthed-zero",
+      "romSha256": "fb89647d4eda93589f829d4bc92630e55690985173b4349e0abcc45f33ad2ed2",
+      "coverAsset": "HomebrewCovers/398e028915d7a492ee731418ec0699c13a22af16271d93ddc3e314e02b566961",
+      "bannerAsset": "HomebrewBanners/398e028915d7a492ee731418ec0699c13a22af16271d93ddc3e314e02b566961",
+      "sourceUrl": "https://benjelter.itch.io/unearthed",
+      "artSource": "Native title/game capture of reviewed ROM SHA-256 fb89647d4eda93589f829d4bc92630e55690985173b4349e0abcc45f33ad2ed2",
+      "transformed": false
+    },
+    {
+      "id": "gba/2048-advance",
+      "romSha256": "6c6cfe318b1c724a29c5e08516a15e5ace354e32b2a04a08d388cfeb4c65ee58",
+      "coverAsset": "HomebrewCovers/7aedc6ce843b3b8ae1b0aaf4d9f484e0d466b62e53a99ed4119f6d0d2f2b8f71",
+      "bannerAsset": "HomebrewBanners/7aedc6ce843b3b8ae1b0aaf4d9f484e0d466b62e53a99ed4119f6d0d2f2b8f71",
+      "sourceUrl": "https://basil-termini.itch.io/2048-advance",
+      "artSource": "https://img.itch.zone/aW1nLzE3MzgwMzUzLnBuZw==/original/5m6194.png",
+      "transformed": false
+    },
+    {
+      "id": "gba/anguna",
+      "romSha256": "1df5a07fef92a526768333d041eec42d4efabfba1ad50e347b8146954ed07ff5",
+      "coverAsset": "HomebrewCovers/10d2bcfc007e3d36ac9efed63f73e55be57d33cab687850793c7c86242630bc7",
+      "bannerAsset": "HomebrewBanners/10d2bcfc007e3d36ac9efed63f73e55be57d33cab687850793c7c86242630bc7",
+      "sourceUrl": "https://gauauu.itch.io/anguna",
+      "artSource": "https://img.itch.zone/aW1nLzI0Njk2MTIucG5n/original/KDdbKs.png",
+      "transformed": false
+    },
+    {
+      "id": "gba/apotris",
+      "romSha256": "f868b6dc52603965f411cc2487ace66bd7481d2499e1ee2f2f48a0a47e58430a",
+      "coverAsset": "HomebrewCovers/7e627bdf87d8951b5a1452910ad4244e6aa41ec30416a2c97a83ed7ad6fe6f26",
+      "bannerAsset": "HomebrewBanners/7e627bdf87d8951b5a1452910ad4244e6aa41ec30416a2c97a83ed7ad6fe6f26",
+      "sourceUrl": "https://akouzoukos.com/apotris",
+      "artSource": "https://akouzoukos.com/logo192.png",
+      "transformed": false
+    },
+    {
+      "id": "gba/blind-jump",
+      "romSha256": "597d11e93567f14f97ba4bc44bf41691b5e0fbac8dd169e6b559bb9086a1739d",
+      "coverAsset": "HomebrewCovers/e096b5531a094d3f0ebf03eed6b4dab19f0c007ed890c6acab9881d3f110f300",
+      "bannerAsset": "HomebrewBanners/e096b5531a094d3f0ebf03eed6b4dab19f0c007ed890c6acab9881d3f110f300",
+      "sourceUrl": "https://evanbowman.itch.io/blindjump",
+      "artSource": "https://img.itch.zone/aW1nLzQzNzM4NjYucG5n/original/5Y%2BHTo.png",
+      "transformed": false
+    },
+    {
+      "id": "gba/goodboy-galaxy",
+      "romSha256": "abb7309ef1ff42618b348c28ac73615b534b18a2532d03b0718a4ff4772f6706",
+      "coverAsset": "HomebrewCovers/32008fa1c923948ad5e7d6928717ea9fe47ecdeb00a2f0b902e62a8d15549748",
+      "bannerAsset": "HomebrewBanners/32008fa1c923948ad5e7d6928717ea9fe47ecdeb00a2f0b902e62a8d15549748",
+      "sourceUrl": "https://goodboygalaxy.itch.io/goodboy-galaxy-gba",
+      "artSource": "https://img.itch.zone/aW1nLzE0MTUxMTA3LnBuZw==/original/MfbSs%2B.png",
+      "transformed": false
+    },
+    {
+      "id": "gba/green-memories",
+      "romSha256": "ccf5f3ac8cfbc5fa24113b4331dbc776df8bef31404e7eb614c529592173cb9f",
+      "coverAsset": "HomebrewCovers/f9f3f12e77b91c3ca1f9c7fa673fe5d68ec9f0b71c26ab30692c21599f42f772",
+      "bannerAsset": "HomebrewBanners/f9f3f12e77b91c3ca1f9c7fa673fe5d68ec9f0b71c26ab30692c21599f42f772",
+      "sourceUrl": "https://tengukaze.itch.io/green-memories-gba",
+      "artSource": "https://img.itch.zone/aW1nLzEyOTM1NjQzLnBuZw==/original/bhsgS0.png",
+      "transformed": false
+    },
+    {
+      "id": "gba/snek-gba",
+      "romSha256": "953620b49cda0fd894922574128e930efc2c86234850d0e5ef0e714a186b6140",
+      "coverAsset": "HomebrewCovers/3999eb1841465b004cf07af128ac7ea21d2a3bb7992b47c82445538f5f91e4ad",
+      "bannerAsset": "HomebrewBanners/3999eb1841465b004cf07af128ac7ea21d2a3bb7992b47c82445538f5f91e4ad",
+      "sourceUrl": "https://leonarthcg.itch.io/snek-gba",
+      "artSource": "https://img.itch.zone/aW1nLzkwODUwODYucG5n/original/l4ZFxi.png",
+      "transformed": false
+    },
+    {
+      "id": "gba/spindown",
+      "romSha256": "0ceb52d68c9c32f85dd3269fc2501c5e9329d8398c3a7164fc3e142987dffd14",
+      "coverAsset": "HomebrewCovers/78e9a00bc9be56dbed977ad66934872c9dfdb52fa4eac05de11d017caeee6975",
+      "bannerAsset": "HomebrewBanners/78e9a00bc9be56dbed977ad66934872c9dfdb52fa4eac05de11d017caeee6975",
+      "sourceUrl": "https://sfiera.itch.io/spindown",
+      "artSource": "https://img.itch.zone/aW1nLzI5ODcyNjAwLnBuZw==/original/jOwMkU.png",
+      "transformed": false
+    },
+    {
+      "id": "gbc/color-lines",
+      "romSha256": "ee39e569a9fc3873133cc8dbbf84eb273b6c5b5500e2e8d2e74ec09a7b1aed87",
+      "coverAsset": "HomebrewCovers/592d039f0cf474616d562885e0318e24520f2de75376d1446fec914df0ea529b",
+      "bannerAsset": "HomebrewBanners/592d039f0cf474616d562885e0318e24520f2de75376d1446fec914df0ea529b",
+      "sourceUrl": "https://www.gamebrew.org/wiki/Color_Lines_GB",
+      "artSource": "Native title/game capture of reviewed ROM SHA-256 ee39e569a9fc3873133cc8dbbf84eb273b6c5b5500e2e8d2e74ec09a7b1aed87",
+      "transformed": false
+    },
+    {
+      "id": "gbc/grand-battle-stadium",
+      "romSha256": "daadf48506db03c7e7e5eae8091af2910a28dc4aa9106c10cf098c8846e5d8d8",
+      "coverAsset": "HomebrewCovers/e62176139a7d7ef78199a0986eba05124a93a7c3bca0fa3fa004c2dff6b862e8",
+      "bannerAsset": "HomebrewBanners/e62176139a7d7ef78199a0986eba05124a93a7c3bca0fa3fa004c2dff6b862e8",
+      "sourceUrl": "https://elvies.itch.io/gbstadium",
+      "artSource": "https://img.itch.zone/aW1nLzcwNTgxNjMucG5n/original/dR9kJ5.png",
+      "transformed": false
+    },
+    {
+      "id": "gbc/saint-seiya-phoenix-returns",
+      "romSha256": "9a883f3a2dc88d62afb6a771539fc06ca979bc2559ea04aef62b019cf2e98aeb",
+      "coverAsset": "HomebrewCovers/f059f11302aa6c6d35fe1336b20ba0a8773906e1fb8e8e40bc61f58a1838c6ef",
+      "bannerAsset": "HomebrewBanners/f059f11302aa6c6d35fe1336b20ba0a8773906e1fb8e8e40bc61f58a1838c6ef",
+      "sourceUrl": "https://zeichigames.itch.io/saint-seiya-el-regreso-del-fnix-gbc",
+      "artSource": "https://img.itch.zone/aW1nLzEyMjMwMTc3LnBuZw==/original/J3CXjG.png",
+      "transformed": false
+    },
+    {
+      "id": "gbc/ucity",
+      "romSha256": "9422ee2ca7b7ea1d46b58b2a429fff3f354dfd3e732dee1e7ae6220f148ce6e0",
+      "coverAsset": "HomebrewCovers/34c6802070f9036d9e0c976d667eb335697b28198737c64f9f5b53e704cb2181",
+      "bannerAsset": "HomebrewBanners/34c6802070f9036d9e0c976d667eb335697b28198737c64f9f5b53e704cb2181",
+      "sourceUrl": "https://github.com/AntonioND/ucity",
+      "artSource": "Native title/game capture of reviewed ROM SHA-256 9422ee2ca7b7ea1d46b58b2a429fff3f354dfd3e732dee1e7ae6220f148ce6e0",
+      "transformed": false
+    },
+    {
+      "id": "nes/lunar-limit",
+      "romSha256": "675f494d04d0adbe7d926eab70464ad9c12558465f7f6e0849aee80204ce38d3",
+      "coverAsset": "HomebrewCovers/c98cda281b8e9dcf82ef56735c1dec1ddc5fceab98d8f4820159168933666d92",
+      "bannerAsset": "HomebrewBanners/c98cda281b8e9dcf82ef56735c1dec1ddc5fceab98d8f4820159168933666d92",
+      "sourceUrl": "https://github.com/pubby/lunarlimit",
+      "artSource": "Plemu AI-assisted presentation illustration guided by Pubby sprites and exact reviewed ROM captures; not gameplay. https://github.com/pubby/lunarlimit",
+      "transformed": true,
+      "artworkDetails": {
+        "coverFile": "presentation-cover-v2.png",
+        "bannerFile": "presentation-banner-v2.png",
+        "fileSha256": {
+          "presentation-cover-v2.png": "c98cda281b8e9dcf82ef56735c1dec1ddc5fceab98d8f4820159168933666d92",
+          "presentation-banner-v2.png": "c98cda281b8e9dcf82ef56735c1dec1ddc5fceab98d8f4820159168933666d92"
+        },
+        "sourceUrl": "https://github.com/pubby/lunarlimit",
+        "authorPage": "https://github.com/pubby/lunarlimit",
+        "type": "plemu-ai-assisted-cover-and-banner",
+        "transformed": true,
+        "artSource": "Plemu AI-assisted presentation illustration guided by Pubby sprites and exact reviewed ROM captures; not gameplay. https://github.com/pubby/lunarlimit",
+        "sources": [
+          {
+            "role": "cover-reference",
+            "name": "lunar-sprites",
+            "url": "https://raw.githubusercontent.com/pubby/lunarlimit/71a3412e02a3909bd2cd39d00a861a37e02fe8fa/tilesets/sprites.png",
+            "sha256": "ec3c21c61b3db9de08f8942efcb13f9e96323385f041a73dec3d016b160ba980",
+            "size": [128, 128]
+          },
+          {
+            "role": "cover-native-reference",
+            "sha256": "6368ac071cb20f150a59560f815af69a0c0994006eff95078ca58029edcc7b9b"
+          },
+          {
+            "role": "cover-native-reference",
+            "sha256": "f28a786e1c03213f9182be6a8aea484733ed3679eaa1e07e686de5edbadadcb3"
+          }
+        ],
+        "generatedCover": {
+          "method": "AI-assisted illustration",
+          "credit": "Plemu AI-assisted presentation illustration; original game/art credits unchanged",
+          "notOfficialBoxArt": true,
+          "notGameplayScreenshot": true
+        }
+      }
+    },
+    {
+      "id": "snes/helheim",
+      "romSha256": "ee4ea4d7d2f3b07b1838d2cc34da69b7578f140f4e2959089394c1974b37ed14",
+      "coverAsset": "HomebrewCovers/e5e394cb4eb6526fa850e0bfd49c6a1771a97f751098ac7be0a23c86c82f38b8",
+      "bannerAsset": "HomebrewBanners/e5e394cb4eb6526fa850e0bfd49c6a1771a97f751098ac7be0a23c86c82f38b8",
+      "sourceUrl": "https://asbiz.itch.io/helheim",
+      "artSource": "https://img.itch.zone/aW1nLzMxNTAzMDkyLnBuZw==/original/OPUr1l.png",
+      "transformed": false
+    }
+  ]
+}

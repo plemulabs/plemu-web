@@ -1,0 +1,317 @@
+{
+  "publisher": "Plemu Labs LLC",
+  "jurisdiction": "Wyoming, United States",
+  "contact": "support@plemu.xyz",
+  "version": "2026-11-08",
+  "prepared": "2026-11-08",
+  "status": "Review draft — not yet effective or approved for publication.",
+  "terms": {
+    "title": "Terms of service",
+    "path": "/toc",
+    "description": "Terms for Plemu’s website, web app, Seeker app and blockchain technology interfaces, provided by Plemu Labs LLC.",
+    "summary": "Plemu Labs LLC provides software and interfaces for blockchain technologies. Token transactions are distinct from game licenses, physical products and ownership of intellectual property.",
+    "sections": [
+      {
+        "id": "provider-and-scope",
+        "title": "Provider and scope",
+        "paragraphs": [
+          "Plemu Labs LLC, a Wyoming limited liability company (Plemu, we, us), provides the Plemu website and landing pages, web application, Seeker/Android application, related software, documentation and interfaces to onchain protocols (together, the Services). These terms describe our relationship with users of the Services. Contact us at support@plemu.xyz. Business correspondence address: 30 N. Gould St., Suite R, Sheridan, WY 82801, United States.",
+          "Plemu is a technology platform provider of blockchain software and interfaces. We do not provide a securities exchange, brokerage, investment advisory service, bank account, fiat exchange or hosted custodial wallet through the Services. We do not perform customer KYC onboarding or collect identity documents for that purpose. A wallet connection is not an identity, eligibility or compliance check.",
+          "These descriptions explain the Services’ intended role and current functions; they do not determine the legal classification of any asset, transaction or activity, exempt anyone from applicable law, or represent regulatory approval. Independent wallets, exchanges, networks and other providers may have their own requirements."
+        ]
+      },
+      {
+        "id": "agreement-and-eligibility",
+        "title": "Agreement, eligibility and local rules",
+        "paragraphs": [
+          "Review these terms before requesting a new wallet action. The interfaces provide a distinct, explicit terms acknowledgment with access to the full document. A version and timestamp are recorded locally, without a wallet signature or identity check; this local record is editable, can be lost when storage is cleared and is not server-verified identity evidence. For a review draft, the interface records only a preview acknowledgment, not acceptance of an effective agreement. When terms become effective, the acceptance flow must identify that effective version. Existing authorized pack settlement, recovery, local gameplay and reading the legal documents do not require agreement to a new version.",
+          "You must have legal capacity to enter the applicable agreement and meet the age, authorization and other eligibility rules that apply to your location and the particular feature. Where local law permits a parent or guardian to authorize use, that authorization must cover the feature concerned; it does not override a legal minimum age for token transactions or randomized paid features. There is no single fixed worldwide minimum age in these terms.",
+          "Do not use a feature where its provision or your use would violate applicable law, including restrictions on token transactions, paid randomized rewards or sanctioned activity. You are responsible for your own eligibility, permissions and tax obligations. Permissionless technical access does not establish legal eligibility, and these terms do not make a restricted activity lawful."
+        ]
+      },
+      {
+        "id": "software-license",
+        "title": "Software license and third-party rights",
+        "paragraphs": [
+          "Subject to a valid agreement and applicable law, Plemu Labs LLC licenses the proprietary software and materials it owns or is authorized to license for your lawful use of the Services. This is a limited, nonexclusive license, not a transfer of ownership, trademark rights or rights to another person’s game. You may not redistribute proprietary Plemu software or branding except with permission or as permitted by law.",
+          "Open-source software, emulator cores, game files, fonts and other third-party components remain subject to their own licenses and notices. Those licenses control their components wherever these terms would conflict; nothing here restricts rights granted by GPL, MPL, MIT, public-domain dedications or other applicable licenses. License texts, credits and source information for bundled app components are available in the app’s Licenses section and packaged notices.",
+          "Use only game files, ROMs, BIOS files, artwork and other materials you have the right to use. Importing, receiving a token or having access to a file does not grant permission to distribute it, bypass a legal restriction or commercialize another person’s work. Inclusion of a title, attribution or token reference does not imply endorsement by its author, a console manufacturer or a rights holder."
+        ]
+      },
+      {
+        "id": "tokens-and-game-rights",
+        "title": "Tokens, access and game rights are separate",
+        "paragraphs": [
+          "Plemu’s token sales and transaction interfaces facilitate interaction with onchain tokens and protocol functions. They are not offers to sell or deliver actual games, ROM copyrights, physical cartridges, consoles or other physical goods. Words such as game token, cartridge, pack, collection, buy or sell describe the relevant token or interface representation; they do not transfer the underlying game or its intellectual property.",
+          "A token balance, an access receipt, a DLC entitlement and a software/content license are distinct. A supported feature may check a token or receipt to determine technical eligibility for access, but copyright and permission to use the content come only from the applicable rights holder’s license or a separate valid grant. A token transfer does not necessarily transfer access records, saved progress or a license. Third-party licenses remain effective according to their own terms.",
+          "Tokens do not, solely by being displayed or transacted through Plemu, provide equity in Plemu Labs LLC, dividends, revenue rights, guaranteed profits, guaranteed redemption, or a claim to game intellectual property. Any actual governance or protocol rights depend on the specific deployed mechanism and applicable law; no future right is promised by these terms."
+        ]
+      },
+      {
+        "id": "wallets-and-control",
+        "title": "Wallets, signing and contract-held assets",
+        "paragraphs": [
+          "You choose and control your own compatible wallet. Plemu does not request your seed phrase or private keys, hold a hosted custodial account for you, or provide private-key recovery. Keep credentials secure and review the network, token address, recipient, amounts, fees, permissions and transaction instructions before authorizing an action. A remembered connection is not permission for an arbitrary new payment.",
+          "Noncustodial wallet access does not mean assets always stay in your wallet. Approved transactions can transfer assets into program-controlled pools, reserves, fee vaults, escrows or other smart-contract accounts. Release, exchange, settlement or refund depends on the relevant program’s rules and authorities. Plemu cannot promise it can reverse a transaction or recover inaccessible assets.",
+          "The Seeker app can retain an encrypted wallet authorization token and public transaction-recovery information. This is separate from storing your wallet’s private keys. A pending or uncertain transaction must be checked before a replacement payment is attempted; losing connection or seeing an error does not prove that the original action failed."
+        ]
+      },
+      {
+        "id": "permissionless-protocol",
+        "title": "Permissionless protocol and community direction",
+        "paragraphs": [
+          "The underlying blockchain protocol is designed for permissionless interaction subject to its deployed technical rules. Independent users may interact directly or through interfaces that Plemu does not operate. These terms govern our Services and do not purport to bind every independent protocol participant, validator or third-party interface.",
+          "The protocol is intended to become progressively more community-driven. This is a direction, not a statement that control has already been decentralized, a commitment to a particular transition date, or a promise that every token holder can vote. Deployed programs may retain upgrade, configuration, fee, treasury, oracle, pause or other administrative authorities, including authorities held by Plemu or other operators. Their existence and scope depend on the particular deployment.",
+          "Contract rules, authorities, liquidity, external oracle inputs and network conditions affect execution. Descriptions on an interface do not override the actual deployed program. Changes to Plemu’s interfaces do not necessarily change or stop independent protocol activity, and a restricted interface is not a guarantee that a public blockchain can be restricted."
+        ]
+      },
+      {
+        "id": "transactions-fees-and-settlement",
+        "title": "Transactions, fees and settlement",
+        "paragraphs": [
+          "Quotes and reference prices are estimates until execution under the selected transaction’s conditions. Slippage, liquidity, network congestion, transaction ordering, MEV, rounding and third-party activity can change outcomes or cause failure. USD reference displays are informational and do not change the accepted quote asset or promise redemption.",
+          "Network fees, account-creation rent, oracle charges, protocol fees and other disclosed charges may apply. Some network charges can be incurred even when the intended operation fails. Review the approval screen and any protocol-specific price, minimum received, expiry and recovery conditions. We do not guarantee market liquidity, a purchaser, a particular price, a listing or uninterrupted settlement.",
+          "Where a supported paid pack uses automatic settlement, the buyer approves the payment and the configured process can complete delivery to the stored buyer under the program’s rules, using a separate executor. This is not authority to redirect rewards or charge unrelated future purchases. Blockchain finality, recovery and refund availability depend on the deployed program, not on a general promise of a manual reversal."
+        ]
+      },
+      {
+        "id": "packs-and-randomized-features",
+        "title": "Packs and randomized features",
+        "paragraphs": [
+          "A token pack can involve randomized allocation of token rewards. Selection rules depend on the specific pack: where selection is without replacement, the selected game entries within that pack are distinct, but rewards can concern games or tokens you already hold or received in earlier draws. Its available pool, probabilities or allocation method, price, applicable fees, randomness process and any timeout, recovery or refund conditions must be understood from the specific feature’s disclosures before approval. A preview animation does not establish an entitlement, guarantee a reward’s value or represent the result of a paid onchain draw.",
+          "An outcome may be worth less than the amount spent, may have no value, and may not be transferable or liquid. Randomness does not remove contract, oracle, execution or legal risks. Paid randomized features may be restricted or prohibited in some places; describing their outputs as tokens or collectibles does not resolve their legal treatment. Do not use them unless you meet the applicable local rules."
+        ]
+      },
+      {
+        "id": "cancellation-and-remedies",
+        "title": "Cancellation, refunds and consumer remedies",
+        "paragraphs": [
+          "A signed, broadcast blockchain transaction may be irreversible, and Plemu may have no technical ability to cancel it or return network fees. A protocol may offer a specific recovery or refund path; only use the path and conditions actually available for that transaction. Contact support@plemu.xyz if something goes wrong and include public transaction details only where necessary.",
+          "Technical irreversibility is not a blanket exclusion of refunds, withdrawal rights or other mandatory consumer remedies. Nothing here removes a remedy required by applicable law, excuses misleading disclosures or substitutes a token label for the legal nature of a transaction. Any consent needed to begin digital performance or affect a withdrawal right must be obtained separately where required; these terms alone do not obtain it."
+        ]
+      },
+      {
+        "id": "beta-and-demonstrations",
+        "title": "Beta, Devnet and product availability",
+        "paragraphs": [
+          "The public website introduces Plemu and links to the separate Solana Devnet web app. The current web app uses the curated Seeker catalog, local browser gameplay, explicit wallet connections and real Devnet protocol transactions for supported game-token markets, welcome receipts and active V2 token packs. A transaction approved in the Devnet app can change Devnet balances and public onchain state; it is not a simulated portfolio. Earlier website demonstrations, where retained in source or local records, do not represent current live market data or production entitlements.",
+          "The current Seeker beta and Devnet web app use Solana Devnet. Native Devnet SOL and test tokens have no promised monetary value, redemption or conversion into Mainnet assets. Devnet can reset, and test balances, receipts, inventory and features can change. Do not send Mainnet assets to a Devnet flow. A feature marked coming soon, simulated, experimental or preview is not a delivered production service or promise of a future release.",
+          "A production or Mainnet feature requires its own accurate deployment and transaction disclosures. These terms do not activate an unlaunched feature, change an existing pool’s economics or promise that every described protocol function is presently available."
+        ]
+      },
+      {
+        "id": "local-gameplay-and-data",
+        "title": "Local gameplay, compatibility and saves",
+        "paragraphs": [
+          "Game compatibility, performance and save formats vary by device, emulator core and version. Imported files, local access records, preferences, saves and recovery copies can be lost when app storage is cleared, a device fails or the app is uninstalled. A recovery checkpoint cannot restore progress that was never saved. The current Seeker beta does not provide cloud-save synchronization.",
+          "A token or receipt is not a backup of a game or saved progress. Keep lawful backup copies where supported and permitted. In the browser, imported games and running player state remain in the current tab; reselect local files after a reload and download supported save files or save states before leaving. Save formats can differ from Seeker. Clearing browser storage can remove saved favorites, preferences, earlier demo records, and transaction-recovery records. The privacy policy explains local storage and external data flows."
+        ]
+      },
+      {
+        "id": "acceptable-use-and-materials",
+        "title": "Acceptable use and material you provide",
+        "paragraphs": [
+          "Do not use our Services to infringe rights, commit fraud, distribute malicious code, steal credentials, manipulate markets unlawfully, evade applicable legal restrictions, or interfere with systems you are not authorized to access. Do not falsely claim that Plemu or a game author endorses your token, content or returns. These restrictions govern use of our Services and do not grant us control of independent blockchain activity.",
+          "You retain rights in material you lawfully create or provide. Merely saving a local concept or selecting a file in the current preview does not upload it or grant Plemu a general commercial license. If you deliberately send material to support, you permit the use reasonably needed to handle that request. Any future public hosting or creator-publication feature must explain its permissions and terms before use.",
+          "Send rights complaints to support@plemu.xyz identifying the work, the allegedly infringing material and its location, your contact details and the basis of your authority. Do not send a private key. We can address material and access we control; we cannot promise to remove independent blockchain records. This contact is not a representation that a statutory copyright-agent registration or safe-harbor qualification is in place."
+        ]
+      },
+      {
+        "id": "third-parties-and-risk",
+        "title": "Third parties and blockchain risks",
+        "paragraphs": [
+          "Wallets, RPC services, validators, explorers, oracles, price providers, app stores, hardware, content hosts and external websites are separate providers with their own terms and privacy practices. A link or integration does not guarantee their availability, security, licensing or performance. Claims about Seeker or Solana compatibility do not imply endorsement by those providers.",
+          "Blockchain use can expose you to loss of the entire amount committed, smart-contract defects, compromised authorities, wallet theft, malicious approvals, counterfeit tokens, oracle failures, governance changes, network failures and tax or regulatory changes. Do not rely on displayed historical returns, reference prices, community activity or roadmap statements as a promise of future value.",
+          "Plemu provides technology and general information, not personalized financial, investment, tax or legal advice. You make your own transaction decisions and should obtain qualified advice when needed. No deposit insurance or investor-protection coverage is promised for tokens or protocol positions."
+        ]
+      },
+      {
+        "id": "availability-and-liability",
+        "title": "Availability, warranties and liability",
+        "paragraphs": [
+          "To the extent permitted by applicable law, experimental software and protocol interfaces are provided as available, without a promise of continuous operation, error-free execution, compatibility, fitness for a particular purpose or financial results. This does not exclude express commitments we make in a binding transaction or statutory standards and remedies that cannot lawfully be excluded.",
+          "To the extent a valid agreement and applicable law permit, we are not liable for indirect or consequential losses that were not reasonably foreseeable, or losses caused solely by independent systems or events outside our reasonable control. This is not a waiver of liability for our own legally actionable conduct.",
+          "Nothing in these terms excludes or limits liability for fraud, intentional misconduct, gross negligence, death or personal injury where the law prohibits exclusion, breach of mandatory consumer or data-protection rights, or any other liability that cannot lawfully be excluded or limited. Mandatory consumer guarantees and remedies take precedence over every disclaimer in these terms."
+        ]
+      },
+      {
+        "id": "changes-suspension-and-exit",
+        "title": "Changes, suspension and leaving",
+        "paragraphs": [
+          "We may update software, correct errors, respond to security risks or restrict access to Services we control where reasonably necessary. For material changes to an effective agreement, we will provide appropriate notice and obtain new agreement where required. Changes do not retroactively remove accrued rights or authorize a materially different use of previously collected personal data without an appropriate legal basis.",
+          "You can stop using the Services and disconnect your wallet. Disconnection does not revoke every wallet permission, erase public records or close a protocol position. Review approvals in your wallet and any applicable contract exit rules. Restricting our interface does not itself confiscate tokens or reverse independent transactions. Applicable third-party licenses and accrued rights survive according to their terms."
+        ]
+      },
+      {
+        "id": "law-and-disputes",
+        "title": "Applicable law, disputes and contact",
+        "paragraphs": [
+          "Plemu Labs LLC is organized in Wyoming, United States. The law governing a dispute and the courts entitled to hear it are determined by applicable law, including any mandatory protections in your place of residence. These terms do not impose mandatory arbitration, a class-action waiver or an exclusive forum that overrides those protections.",
+          "For a complaint or legal notice, contact support@plemu.xyz with the relevant facts and the remedy you seek. Contacting us does not require you to give up a right to a regulator, court or other remedy. If part of an effective agreement is unenforceable, the remaining provisions apply only to the extent permitted by law.",
+          "Read the companion privacy policy at https://plemu.xyz/privacy. It explains data processing and your choices; it is a notice, not blanket consent to processing. The canonical location for these terms is https://plemu.xyz/toc."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "path": "/privacy",
+    "description": "How Plemu Labs LLC handles information across the Plemu website, web app, Seeker app and blockchain interfaces.",
+    "summary": "Local gameplay and browser demonstrations use local storage. Wallets, network providers and public blockchains have separate data flows. Public wallet activity can identify a person and is not anonymous by default.",
+    "sections": [
+      {
+        "id": "controller-and-scope",
+        "title": "Who this policy covers",
+        "paragraphs": [
+          "Plemu Labs LLC, a Wyoming limited liability company, is responsible for personal information it processes in operating the Plemu website and landing pages, web application, Seeker/Android application, related support and Plemu-operated blockchain interfaces. Contact support@plemu.xyz for privacy questions and requests. This policy covers those Services, including their current demonstrations and Devnet beta. Business correspondence address: 30 N. Gould St., Suite R, Sheridan, WY 82801, United States.",
+          "Our technology-provider role does not mean that no personal information is processed. IP addresses, public wallet addresses, transaction histories, device information and correspondence can be personal information. Independent wallets, RPC providers, validators, explorers and other services are responsible for their own processing; this policy does not make Plemu the operator of every component of a permissionless network.",
+          "This policy explains processing; it is not consent obtained merely by visiting a page or connecting a wallet. Optional permissions and consent, where required, must be requested for the relevant purpose. The terms of service are available at https://plemu.xyz/toc."
+        ]
+      },
+      {
+        "id": "information-and-sources",
+        "title": "Information and where it comes from",
+        "paragraphs": [
+          "You provide information when selecting local files, saving preferences or drafts, connecting a wallet, approving a transaction or contacting support. Local files do not automatically become information held on Plemu’s servers. The sections below distinguish information kept on your device from information sent over a network.",
+          "Network requests disclose connection information to their recipients, such as IP address, request time, requested address, browser or app headers, device/browser characteristics and error or security information. Our hosting and infrastructure providers can process this information to deliver and secure the website and related services. Public HTTP and DNS checks identify Vercel as the current website host; actual account log settings and contractual transfer arrangements require deployment-specific verification.",
+          "When you connect a wallet or use an onchain feature, information can include a public wallet address, wallet/provider selection, authorization state, balances, holdings, signed challenges, transaction messages, public signatures, receipts, quotes and transaction status. Public blockchain records and provider responses are additional sources. Support messages can include your email address and anything you choose to send."
+        ]
+      },
+      {
+        "id": "website-storage",
+        "title": "Website and web app storage",
+        "paragraphs": [
+          "The public landing page does not use analytics or browser preference storage. The Devnet web app can remember saved catalog favorites, sound/motion preferences and your selected wallet only after you choose Allow saved preferences. Until then, those controls work in memory for the session. Existing optional records are not read or migrated before opt-in. The current local creator draft is session-only; downloading its JSON creates a file on your device and does not publish it or upload a game.",
+          "Privacy choices in the footer lets you enable or withdraw optional saving. Turning it off removes Plemu’s specifically named optional browser records and prevents later writes; it does not clear unrelated site data or essential transaction-recovery records. Legacy demonstration records and older third-party wallet records can also be removed through browser site-data controls. Withdrawal does not require you to stop browsing, local gameplay or explicit wallet access.",
+          "The site separately stores a minimal privacy-choice record and a terms-version/time acknowledgment so it can apply your choices. These records are distinct from optional persistence and are not advertising consent. If storage is unavailable, optional saving stays disabled and terms acknowledgment can remain in memory for the session. The current wallet connection is requested explicitly; the web mobile-wallet authorization cache is memory-only and does not persist wallet authorization tokens in browser storage. Remembering a selected wallet does not authorize automatic connection or a new signature.",
+          "Browser game imports use only files you explicitly select. Imported game bytes are held in the current tab and passed to an isolated local player; they are not uploaded. Curated bundled games and player files are downloaded from the app’s own host. The player has no access to the parent app’s wallet or browser storage. Player persistence and multiplayer/network play are disabled in this integration. Supported saves are imported or downloaded explicitly, rather than synchronized to Plemu servers.",
+          "Before submitting a wallet-signed Devnet transaction, the web app saves and reads back the exact signed bytes, public wallet address, signature, operation type and expiry metadata in a local recovery record. One unresolved record per wallet prevents accidental replacement by another request. This record is necessary for the requested operation and is separate from optional preferences; turning optional saving off does not delete it. Confirmed, failed or expired operations can be cleared by the status-check flow, and clearing site data removes the local copy. Signed bytes are not private keys, but anyone receiving valid bytes may submit that transaction before it expires."
+        ]
+      },
+      {
+        "id": "camera",
+        "title": "Camera and device permissions",
+        "paragraphs": [
+          "The current public landing page and Devnet web app do not request camera or microphone access. Local imports use a file picker only after you select Import a game. Fullscreen, gamepad and audio behavior depend on browser capabilities and your explicit player actions.",
+          "Earlier Pixel Mirror demonstrations processed video frames locally after a separate camera permission and did not upload or retain them on Plemu servers. Any permission retained from an earlier version can be revoked in browser or operating-system settings. A future feature requiring a new device permission must request it separately."
+        ]
+      },
+      {
+        "id": "seeker-local-data",
+        "title": "Seeker app: files, saves and local preferences",
+        "paragraphs": [
+          "Imported ROMs, save states, recovery copies, favorites, library/recent-game metadata, preferences, local access records and transaction-recovery records are stored in the app’s private storage. Imports use Android’s document picker for the files you select. The current app does not upload imported ROM files or save states, provide cloud-save synchronization or enable Android app backup.",
+          "Clearing app storage through Android Settings or uninstalling removes the app’s local data, including its copies of games, saves and recovery data. Files originally selected from another folder remain in that original location. Different beta/private packages have separate app storage. Keep important lawful backups before clearing storage or changing devices."
+        ]
+      },
+      {
+        "id": "wallet-authorization",
+        "title": "Seeker app: wallet authorization and recovery",
+        "paragraphs": [
+          "A separate compatible wallet handles Mobile Wallet Adapter authorization and signing. Plemu does not request or store your seed phrase or wallet private key. The app can remember its wallet connection across launches: the authorization token is encrypted using Android Keystore and stored in app-private no-backup storage; the public account address and selected Android wallet package are remembered separately.",
+          "Restoring a saved session does not itself open an approval prompt or authorize a new transaction. The account is remembered until a user-initiated action checks authorization. Disconnect & forget removes the app’s saved connection. If secure authorization storage is unavailable, the app uses a volatile session instead of persisting the token in plaintext. The wallet provider retains and handles its own records and permissions.",
+          "A bounded local recovery journal can contain public signatures, status, signed transaction messages and expiry information for interrupted operations. This journal is distinct from private keys and authorization secrets. For supported trades the app verifies and submits wallet-signed transaction bytes to its configured RPC; other supported actions can use wallet-managed submission. Signed bytes sent to a provider, including for simulation, can expose transaction information and may be broadcast by that provider."
+        ]
+      },
+      {
+        "id": "rpc-and-blockchain",
+        "title": "RPC requests and public blockchain records",
+        "paragraphs": [
+          "Market, balance, ownership, history and transaction checks send relevant public addresses, account identifiers, signatures and request data to the configured Solana RPC provider. Market screens may request public data even without a connected wallet. The provider receives connection information, including IP address, and can correlate requests. RPC endpoints can vary by product or deployment; the current beta uses Devnet.",
+          "Approved transactions and program activity can publish wallet addresses, holdings, transfers, token and access receipts, pack requests and rewards, randomness results, market fills, fees and burn events. Anyone can inspect, copy, index or combine public records, including linking them to information outside Plemu. A pseudonymous wallet is not necessarily anonymous.",
+          "Plemu cannot rewrite independent public blockchain history or ensure that validators, explorers, indexers and other recipients delete their copies. Clearing app data, disconnecting a wallet or making a request to Plemu does not erase those copies. Devnet may reset, but that is not a privacy deletion mechanism or guarantee. These technical limits do not remove our duties or your legal rights concerning processing under our control. Avoid putting names, contact details, secrets or other unnecessary personal information into public transaction fields."
+        ]
+      },
+      {
+        "id": "prices-and-external-links",
+        "title": "Price references and external services",
+        "paragraphs": [
+          "To display indicative USD figures, the Seeker app may automatically request the public SOL-USD ticker from Coinbase at api.exchange.coinbase.com without a connected wallet. That request includes ordinary HTTP connection information and app headers. The ticker request does not attach a wallet address, transaction, ROM/save content or account login. The app uses a short in-memory quote cache and falls back when a reference is unavailable.",
+          "The current website build serves its typefaces, including the wallet-interface font, with the website. The wallet library’s previous automatic Google Fonts import has been removed. Independent wallet extensions or apps and external links can still make their own network requests under their own practices.",
+          "External author, source-code, explorer, faucet, wallet-install and other links open services with their own practices. Explorer links can include a public address or transaction signature. Wallet authorization may display app identity or a logo from Plemu’s website, causing a normal network request. Content and software download requests, where offered, also disclose request and connection information to the relevant host."
+        ]
+      },
+      {
+        "id": "support-and-diagnostics",
+        "title": "Support and diagnostics",
+        "paragraphs": [
+          "If you email support@plemu.xyz, we receive the address, message, attachments and technical details you provide. Send only what is necessary; never send a seed phrase, private key, full authorization token or unnecessary identity document. Public transaction details may help investigate an issue, but can also link your email identity to a wallet.",
+          "The Seeker app’s Copy diagnostics action copies basic app/build, device model, operating-system, graphics, screen and network-label details to the clipboard. That generated text excludes imported game names, file paths, wallet addresses, signatures and RPC credentials. Copying does not automatically send it to support; you decide where to paste it. Other information or screenshots you choose to send may contain additional personal data.",
+          "The reviewed app and web source do not include an advertising network, cross-site advertising tracker or automatic user crash-upload service. This does not mean there are no infrastructure access/security logs, provider records or local development logs. Any added analytics, automatic diagnostics, account, cloud-save or upload feature requires an updated notice and any permissions required before it starts."
+        ]
+      },
+      {
+        "id": "purposes-and-legal-bases",
+        "title": "Purposes and legal bases",
+        "paragraphs": [
+          "We process information to deliver requested pages and features, maintain settings and drafts, connect wallets, show public account information, facilitate user-authorized protocol interactions, recover interrupted actions, respond to support, prevent abuse, maintain security and meet applicable legal obligations. We do not use wallet connection as customer KYC or ask for identity documents for financial onboarding.",
+          "Where GDPR, UK GDPR or similar lawful-basis requirements apply, processing necessary for a service you request can rely on performance of the relevant contract or steps you request before it. Proportionate security, troubleshooting and support administration can rely on legitimate interests in operating and protecting the Services, subject to your rights and the required balancing assessment. Processing required by a specific applicable law relies on that legal obligation.",
+          "Optional camera access and nonessential storage or other optional processing rely on consent where required. You can withdraw consent for future processing without affecting processing already lawfully performed. Declining an optional permission may disable that feature, rather than prevent unrelated browsing or local gameplay. We do not rely on these terms or this notice as a general consent."
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "Recipients and disclosure",
+        "paragraphs": [
+          "Information can be received by hosting, delivery, infrastructure and support/email providers needed to operate the Services; the wallet, RPC, price or content provider used for a feature; and the public when you interact with a public blockchain. A provider acting on our instructions should receive information limited to its service and be bound by appropriate obligations. A provider acting independently applies its own privacy notice.",
+          "We may disclose information where legally required, to respond to valid legal process, protect rights and security, or investigate abuse, subject to applicable law and proportionality. A corporate transaction can require limited disclosure with appropriate protections and notice where required; it does not authorize unrestricted new uses of your information.",
+          "Plemu does not sell personal information or share it for cross-context behavioral advertising in the described Services, and does not use camera frames for advertising. Public blockchain disclosure is explained separately and should not be mistaken for a private disclosure to Plemu alone. We do not promise that independent recipients will never process public information for their own purposes."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Retention",
+        "paragraphs": [
+          "Optional browser favorites, sound/motion settings and selected-wallet preferences are retained only after opt-in, until replaced, withdrawn or cleared. Earlier optional drafts, profiles and demo records are also removed by the named-record withdrawal mechanism. Current local browser imports, player state and creator drafts remain in the current tab unless you explicitly download a file; a reload or tab closure can discard them. The privacy-choice record and versioned terms acknowledgment remain until replaced or site storage is cleared. The pending transaction journal retains one unresolved operation per wallet until its confirmed, failed or expired status is checked or site data is cleared. Seeker files and preferences generally remain until removed or the app is cleared/uninstalled; Disconnect & forget removes the app’s saved wallet connection. Its local terms acknowledgment remains separate from wallet credentials.",
+          "For support messages and operational records under our control, retention is limited to the period reasonably needed for the request, service operation, security investigation, legal obligation or establishment/defense of legal claims. Relevant criteria include whether a request remains open, the sensitivity of the information, applicable limitation/retention requirements and whether deletion would impair an active security investigation. We do not claim a uniform retention period for all records.",
+          "Independent providers determine retention for their own records. Public blockchain data and third-party copies may persist indefinitely. Local deletion does not remove email already sent, provider logs, wallet records or blockchain history. Contact support@plemu.xyz to ask about records we control and the retention criteria applying to your request."
+        ]
+      },
+      {
+        "id": "international-processing-and-security",
+        "title": "International processing and security",
+        "paragraphs": [
+          "Plemu Labs LLC is in the United States. Hosting, email, wallet, RPC and other providers can process information in other countries, and public blockchain participants are distributed worldwide. Those countries may offer different protections. Where a restricted international transfer is our responsibility, an applicable lawful transfer mechanism and safeguards are required; public availability alone is not an exemption from data-protection rules. Contact us for details of applicable safeguards and a copy where available.",
+          "Measures used in the described products include app-private storage, Android Keystore encryption for stored wallet authorization, no-backup storage for that token, explicit wallet signing boundaries, browser camera permissions and limits on diagnostic content. No storage, encryption or network system eliminates every risk. Protect your device, browser, wallet permissions and backups; notify support if you believe information has been exposed."
+        ]
+      },
+      {
+        "id": "rights-and-requests",
+        "title": "Your choices, rights and requests",
+        "paragraphs": [
+          "Depending on your location and the law that applies, you may have rights to know whether information is processed, access it, obtain a portable copy, correct it, delete it, restrict processing, object to legitimate-interest processing, withdraw consent, limit certain uses of sensitive information, or opt out of sale, sharing or targeted advertising. These rights have legal conditions and exceptions; we do not treat technical limits as a waiver of rights over data we control.",
+          "Email support@plemu.xyz with your request and enough context to locate relevant records. We may ask for proportionate verification or proof that an agent is authorized, but never your private keys or seed phrase. A request to a local app may be fulfilled through device controls where Plemu does not hold a server copy. We will explain a refusal, an applicable exception or a technical limitation and any available review or appeal route.",
+          "We respond within the deadlines required by applicable law. Where GDPR/UK GDPR applies, this is normally one month, with any lawful extension explained; where applicable US state law provides a 45-day period, that period and its lawful extension rules apply. Other local deadlines may differ. You may complain to the competent privacy regulator, including your EEA supervisory authority, the UK Information Commissioner or, where applicable, Brazil’s ANPD, and pursue available legal remedies."
+        ]
+      },
+      {
+        "id": "us-state-notice",
+        "title": "California and other US state rights",
+        "paragraphs": [
+          "Where a state privacy law applies to Plemu and your information, the categories described above include identifiers (email, IP and wallet addresses), device/network activity, transaction/receipt information, information you submit to support and local draft/profile content. Their sources, purposes, recipients and retention criteria are described in this policy. Local camera video is processed for the optional effect, without a biometric identity profile or server upload by that feature.",
+          "Applicable rights can include access, correction, deletion, portability, an authorized-agent request, an appeal, nondiscrimination for exercising rights and opt-outs of sale, targeted advertising or certain profiling. The described Services do not sell personal information, share it for cross-context behavioral advertising or use it for targeted advertising; there is no such advertising activity for a Global Privacy Control signal to opt out of in those Services. If practices change, any required notice and opt-out controls must be provided before the change.",
+          "This notice does not claim that every state statute applies regardless of its thresholds, or that public blockchain information is categorically excluded from protection. Contact support@plemu.xyz to exercise an applicable right or request review of a decision."
+        ]
+      },
+      {
+        "id": "children-and-automated-decisions",
+        "title": "Children and automated processing",
+        "paragraphs": [
+          "Use is subject to legal capacity and the local age and authorization rules for each feature, as described in the terms. A parent’s permission does not override a statutory restriction on a child’s token transactions or randomized paid features. The Services do not provide a child-account or parental-verification system. Do not send children’s personal information to support unless needed to address a privacy or safety request.",
+          "If you believe a child’s information has been processed without authorization required by law, contact support@plemu.xyz so we can investigate, remove information under our control where required and address the relevant processing. This policy does not claim that a statement of eligibility alone satisfies children’s privacy requirements.",
+          "Protocol execution, token-based access checks, randomized reward selection and interface calculations can be automated. Their effects depend on the specific feature and its use; we do not assume that automation is exempt from applicable profiling or automated-decision rules. Where processing under our control falls within such rules, applicable information, review and challenge rights remain available. Contact support@plemu.xyz about an automated outcome or to exercise an applicable right."
+        ]
+      },
+      {
+        "id": "policy-changes-and-contact",
+        "title": "Changes and contact",
+        "paragraphs": [
+          "We will identify updates with a revised version/date and give additional notice of material changes where required. A new notice does not retroactively authorize incompatible processing, replace required consent or waive your existing rights. Product and provider changes must be reflected in the notice before the relevant new processing begins.",
+          "Privacy and support contact: support@plemu.xyz, Plemu Labs LLC, 30 N. Gould St., Suite R, Sheridan, WY 82801, United States. The canonical privacy policy is https://plemu.xyz/privacy, and the terms of service are at https://plemu.xyz/toc. Offline copies bundled with an app describe their stated version; consult the website for later published versions when available."
+        ]
+      }
+    ]
+  },
+  "effectiveDate": null,
+  "address": "30 N. Gould St., Suite R, Sheridan, WY 82801, United States"
+}

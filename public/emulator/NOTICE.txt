@@ -1,0 +1,11 @@
+Plemu browser player components
+
+EmulatorJS 4.2.3 is GPL-3.0. Its license is LICENSE; complete unminified frontend modules are under data/src/. Plemu uses the source-module loader so the readable, modified code is the executed code. The stable player disables external update queries, browser storage/cache and multiplayer; storage guards are evaluated before storage getters for an opaque-origin sandbox. Other upstream notices remain in place.
+
+Selected WebAssembly cores: gambatte (Game Boy/Color), FCEUmm (NES), mGBA (GBA). Exact bundled licenses are under notices/. Core artifacts are taken from the official 4.2.3 release. Core source repositories are listed in data/cores/cores.json. These are downloaded compiled artifacts; a corresponding-source/toolchain reproducibility review remains a public-distribution release gate. Do not infer binary/source equivalence from a repository URL.
+
+Official frontend release/source: https://github.com/EmulatorJS/EmulatorJS/releases/tag/v4.2.3
+Core build framework: https://github.com/EmulatorJS/build
+Source repositories: https://github.com/EmulatorJS/gambatte-libretro ; https://github.com/EmulatorJS/libretro-fceumm ; https://github.com/EmulatorJS/mgba
+
+The separate experimental SNES player is at /emulator-snes/INTEGRATION.md with its own GPL notices and captured release/nightly provenance. Plemu terms do not remove rights granted by these component licenses. No warranty, game copyright license, source-to-binary attestation or third-party endorsement is made by this notice.

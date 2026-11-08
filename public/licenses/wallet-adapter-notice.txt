@@ -1,0 +1,9 @@
+Plemu web wallet adapter notices
+
+@solana/wallet-adapter-react 0.15.40
+@solana/wallet-adapter-react-ui 0.9.40
+Upstream: https://github.com/anza-xyz/wallet-adapter
+License: Apache License, Version 2.0
+Complete license: /licenses/wallet-adapter-apache-2.0.txt
+
+Plemu adapts the React wallet provider to make selected-wallet storage conditional on user choice, keep mobile authorization in memory and require versioned terms acknowledgment before new wallet authorization/signing calls. Public SDK interfaces and upstream lifecycle handling are retained. The wallet UI stylesheet omits the upstream Google Fonts import because the font is self-hosted. These modifications do not replace upstream licenses or imply upstream endorsement.

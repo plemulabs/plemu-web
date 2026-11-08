@@ -1,0 +1,112 @@
+{
+  "upstreamRepository": "https://github.com/plemulabs/plemu-skr",
+  "upstreamCommit": "c5a16e0a2745cc3d2fbb90f2e1a9fdb2ae07e3e7",
+  "purpose": "Pinned upstream compiler-generated files and Seeker release fixture; no sibling checkout required to test",
+  "files": [
+    {
+      "path": "lib/devnet/generated/accounts/faucetClaim.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/faucetClaim.ts",
+      "sha256": "81bfe1f504a600814f6210c0a9123e31dee0055db760bddd1e155226e63086df"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/gameAccess.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/gameAccess.ts",
+      "sha256": "e8787c10ecc44f42c693397094fe2f35632b1ba794558d647c9ee7ceda80fa8d"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/gameMarketV1.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/gameMarketV1.ts",
+      "sha256": "357517a523700244c58a5231aa36f48b2b9fdaa8f45a7cf3ce82e577998222c6"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/gameProtocolV1.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/gameProtocolV1.ts",
+      "sha256": "1a608ad0e5f7dc366a14f13bba737441abaa915ca887ac13dde15f3cf11423b3"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/gameSolVaultV1.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/gameSolVaultV1.ts",
+      "sha256": "e6cfc89dd54a3fef9a8dc7b37cca2f4a1655f79a180e25913eb7f4c5ab4c9406"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/market.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/market.ts",
+      "sha256": "caed3e9a489995893f643320a95e5e4172e96407910a729c04f721f94b020a61"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/packDrawV2.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/packDrawV2.ts",
+      "sha256": "f8cb4db424c7b3a21b2b76bd4ae132e5b5556362aab02c099b7d0ecfb8139072"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/packPlayerV2.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/packPlayerV2.ts",
+      "sha256": "1b405b5812ffcdc9e2677b1dd131974bc4b72634caefd848400b1493eeb6b131"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/randomPackV2.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/randomPackV2.ts",
+      "sha256": "f7f53cd6fd5b3d389653c64292cef1c2ad64a98ab38f3bc7c5e616b309458389"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/testFaucet.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/testFaucet.ts",
+      "sha256": "2d640e68f9c9c8ab5fc4f7b86d2e27b5254525f42e8ff8277b4cef7a87499c0d"
+    },
+    {
+      "path": "lib/devnet/generated/accounts/welcomePack.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/accounts/welcomePack.ts",
+      "sha256": "60a1253fc98b1ca6c7e0d67e9749a4231eb45995af5ec1409794dd7c31a0b7d9"
+    },
+    {
+      "path": "lib/devnet/generated/types/index.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/types/index.ts",
+      "sha256": "0aab8c3b740696a986aafbd9076904190e015c5481a5ba5fcb78d9b066dda386"
+    },
+    {
+      "path": "lib/devnet/generated/types/packReward.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/types/packReward.ts",
+      "sha256": "3dbc4a4746d5680603662394944148488a30db136304927beceeb3fbd093f6cc"
+    },
+    {
+      "path": "lib/devnet/generated/types/packRewardV4.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/types/packRewardV4.ts",
+      "sha256": "a3025a08d7d5ce51b6f8ac2e68a1552e160e3db88766b6d49e8091c828587e10"
+    },
+    {
+      "path": "lib/devnet/generated/types/rewardRowsV4.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/types/rewardRowsV4.ts",
+      "sha256": "9d8a5421450823d476ba389b63e1a550fe86ae6100e4658793972dec343d8bf7"
+    },
+    {
+      "path": "lib/devnet/generated/events/gameBuybackV1.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/events/gameBuybackV1.ts",
+      "sha256": "57305d0044bda1f87e3871282b88d85cdf77e2aa8fa66b8216a9da0aca067033"
+    },
+    {
+      "path": "lib/devnet/generated/events/gameFeeClaimedV1.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/events/gameFeeClaimedV1.ts",
+      "sha256": "61cda3fcf9119c3034c304391b6d65090c08b7aa863b0a3c03281664fafa9bde"
+    },
+    {
+      "path": "lib/devnet/generated/events/gameHypergraduatedV1.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/events/gameHypergraduatedV1.ts",
+      "sha256": "ee8bca1a2c93a319d17f8ab96d1975e159a3ef81762cd75180300cbc3559dc48"
+    },
+    {
+      "path": "lib/devnet/generated/events/gameStageAdvancedV1.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/events/gameStageAdvancedV1.ts",
+      "sha256": "3f575071d201fae3537971c242a87a4ba4d6bf1a2137371746fae49787a0dfb4"
+    },
+    {
+      "path": "lib/devnet/generated/events/gameTradeV1.ts",
+      "upstreamPath": "programs/launchpad/clients/typescript/src/generated/events/gameTradeV1.ts",
+      "sha256": "137dd2003194c6472f7d18c539bbb65638b436cc700c4a493978a1c315a3780e"
+    },
+    {
+      "path": "lib/devnet/__tests__/fixtures/seeker-markets-v1.json",
+      "upstreamPath": "apps/device/unity/Assets/_Game/Resources/GameTokenMarketsV1.json",
+      "sha256": "0c464140e2fabb69c4107a4f10b13c1f6f528ed37169f7d28bf65afc16f887b5"
+    }
+  ]
+}

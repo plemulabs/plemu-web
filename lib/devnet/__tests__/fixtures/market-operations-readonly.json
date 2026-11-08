@@ -1,0 +1,182 @@
+{
+  "cluster": "devnet",
+  "genesisHash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "readSlot": {
+    "$bigint": "520063065"
+  },
+  "readAtMs": 1794150995414,
+  "chainTime": {
+    "$bigint": "1794150994"
+  },
+  "wallet": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+  "kind": "market",
+  "config": {
+    "deployed": true,
+    "licenseThreshold": 1000000000000,
+    "catalogId": "gba/apotris",
+    "title": "Apotris",
+    "symbol": "APOTRIS",
+    "creator": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+    "gameId": "fbc6f942f112c2b90cda0ed361568ff51330c9e186df703e473bbaa9fb2e2bab",
+    "contentHash": "f868b6dc52603965f411cc2487ace66bd7481d2499e1ee2f2f48a0a47e58430a",
+    "market": "2HnBGnxwYr3e2N7FyHHwcwYZGhcnsPoRaAZhawjRyw6p",
+    "mint": "8LQ2igU4z6ekuXoBn9QxgeWv3WidDnokUx8g2HVtspuq",
+    "system": "gba",
+    "seedWallets": [
+      "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+      "79bnkSFGG4ptfcoyKocuK1FhRbvF2YWxLhQGUqaJia5T",
+      "BHaJYoscqM4wiBHE7G6Y7F3EF98kDrX5bTncpUisG4Xz"
+    ]
+  },
+  "market": {
+    "discriminator": {
+      "$bytes": [71, 255, 93, 187, 242, 165, 38, 136]
+    },
+    "version": 1,
+    "creator": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+    "gameId": {
+      "$bytes": [
+        251, 198, 249, 66, 241, 18, 194, 185, 12, 218, 14, 211, 97, 86, 143,
+        245, 19, 48, 201, 225, 134, 223, 112, 62, 71, 59, 186, 169, 251, 46, 43,
+        171
+      ]
+    },
+    "contentHash": {
+      "$bytes": [
+        248, 104, 182, 220, 82, 96, 57, 101, 244, 17, 204, 36, 135, 172, 230,
+        107, 215, 72, 29, 36, 153, 225, 238, 47, 47, 72, 160, 164, 126, 88, 67,
+        10
+      ]
+    },
+    "mint": "8LQ2igU4z6ekuXoBn9QxgeWv3WidDnokUx8g2HVtspuq",
+    "targetQuote": {
+      "$bigint": "1000000000"
+    },
+    "licenseThreshold": {
+      "$bigint": "1000000000000"
+    },
+    "sold": {
+      "$bigint": "800000000000000"
+    },
+    "curveQuote": {
+      "$bigint": "0"
+    },
+    "poolQuote": {
+      "$bigint": "1002515562"
+    },
+    "poolTokens": {
+      "$bigint": "199498150300534"
+    },
+    "graduated": true,
+    "alphaUnlocked": true,
+    "dexReady": true,
+    "beta": true,
+    "totalFees": {
+      "$bigint": "12594261"
+    },
+    "platformAccrued": {
+      "$bigint": "7509423"
+    },
+    "creatorAccrued": {
+      "$bigint": "5075415"
+    },
+    "buybackAccrued": {
+      "$bigint": "9423"
+    },
+    "platformClaimed": {
+      "$bigint": "0"
+    },
+    "creatorClaimed": {
+      "$bigint": "0"
+    },
+    "buybackSpent": {
+      "$bigint": "9412"
+    },
+    "burnedTokens": {
+      "$bigint": "1849699466"
+    },
+    "buybackMinimum": {
+      "$bigint": "2"
+    },
+    "buybackMaximum": {
+      "$bigint": "100000000"
+    },
+    "buybackSlippageBps": 100,
+    "priceCumulative": {
+      "$bigint": "1625130588833306277916"
+    },
+    "lastPriceUpdate": {
+      "$bigint": "1793693197"
+    },
+    "observationCumulative": {
+      "$bigint": "1624732586333836616248"
+    },
+    "observationAt": {
+      "$bigint": "1793693195"
+    },
+    "twapTokensPerQuote": {
+      "$bigint": "199001825470467912"
+    },
+    "twapObservedAt": {
+      "$bigint": "1793693195"
+    },
+    "createdAt": {
+      "$bigint": "1793681065"
+    },
+    "graduatedAt": {
+      "$bigint": "1793681076"
+    },
+    "alphaAt": {
+      "$bigint": "1793685058"
+    },
+    "hypergraduatedAt": {
+      "$bigint": "1793685067"
+    },
+    "betaAt": {
+      "$bigint": "1793692321"
+    },
+    "postGraduationTrades": {
+      "$bigint": "5"
+    },
+    "lastLifecycleAt": {
+      "$bigint": "1793693197"
+    },
+    "bump": 255,
+    "mintBump": 255,
+    "saleBump": 255,
+    "liquidityBump": 255,
+    "poolBump": 252,
+    "quoteBump": 255,
+    "poolQuoteBump": 255,
+    "feesBump": 255,
+    "buybackBump": 255
+  },
+  "protocol": {
+    "discriminator": {
+      "$bytes": [245, 146, 118, 156, 200, 234, 143, 20]
+    },
+    "version": 1,
+    "authority": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+    "platform": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+    "bump": 254
+  },
+  "mintSupply": {
+    "$bigint": "999998150300534"
+  },
+  "walletTokens": {
+    "$bigint": "487820619613061"
+  },
+  "walletLamports": {
+    "$bigint": "9364622193"
+  },
+  "walletEligible": true,
+  "tokenAccounts": [
+    {
+      "address": "J1nZnwQue2TrpusrKxGJpFtdU5ApoxkgEe2AcEfV5jw1",
+      "amount": {
+        "$bigint": "487820619613061"
+      }
+    }
+  ],
+  "stage": "beta"
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "fceumm",
+    "extensions": [
+      "fds",
+      "nes",
+      "unif",
+      "unf"
+    ],
+    "makeoptions": {
+      "buildpath": "./",
+      "makescript": "Makefile.libretro",
+      "arguments": []
+    },
+    "options": {},
+    "save": "srm",
+    "license": "Copying",
+    "repo": "https://github.com/EmulatorJS/libretro-fceumm"
+  },
+  {
+    "name": "gambatte",
+    "extensions": [
+      "gb",
+      "gbc",
+      "dmg"
+    ],
+    "makeoptions": {
+      "buildpath": "./",
+      "makescript": "Makefile.libretro",
+      "arguments": []
+    },
+    "options": {},
+    "save": "srm",
+    "license": "COPYING",
+    "repo": "https://github.com/EmulatorJS/gambatte-libretro"
+  },
+  {
+    "name": "mgba",
+    "extensions": [
+      "gb",
+      "gbc",
+      "gba"
+    ],
+    "makeoptions": {
+      "buildpath": "./",
+      "makescript": "Makefile.libretro",
+      "arguments": []
+    },
+    "options": {},
+    "save": "srm",
+    "license": "LICENSE",
+    "repo": "https://github.com/EmulatorJS/mgba"
+  }
+]

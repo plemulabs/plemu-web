@@ -1,0 +1,12 @@
+* text=auto
+# Preserve exact asset, license and generated-code hashes across checkouts.
+public/** -text
+lib/devnet/generated/** -text
+lib/devnet/__tests__/fixtures/** -text
+
+# Keep vendored source/notices byte-identical; first-party frame code remains checked.
+public/emulator/data/** -whitespace
+public/emulator-snes/data/** -whitespace
+public/seeker/notices/** -whitespace
+public/emulator/notices/** -whitespace
+public/emulator-snes/notices/** -whitespace

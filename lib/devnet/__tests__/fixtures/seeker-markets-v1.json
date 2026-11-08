@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "cluster": "devnet",
+  "games": [
+    {
+      "deployed": true,
+      "licenseThreshold": 1000000000000,
+      "catalogId": "gba/goodboy-galaxy",
+      "title": "Goodboy Galaxy",
+      "symbol": "GOODBOY",
+      "creator": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+      "gameId": "6bbf1e3bbc94d6f379639e515a1c93e8848eef58d1441fda37f7751e18ca9ee4",
+      "contentHash": "abb7309ef1ff42618b348c28ac73615b534b18a2532d03b0718a4ff4772f6706",
+      "market": "6vYJrxcVyhTzWp5JWfTRPbMwczbnBkPNBDnnNeQshhXE",
+      "mint": "E7MDzsQk9Ptcu1wDaeKa68oB42tydZ1g3ZpxhhMb6AjC",
+      "system": "gba",
+      "seedWallets": [
+        "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+        "79bnkSFGG4ptfcoyKocuK1FhRbvF2YWxLhQGUqaJia5T",
+        "BHaJYoscqM4wiBHE7G6Y7F3EF98kDrX5bTncpUisG4Xz"
+      ]
+    },
+    {
+      "deployed": true,
+      "licenseThreshold": 1000000000000,
+      "catalogId": "gba/anguna",
+      "title": "Anguna: Warriors of Virtue",
+      "symbol": "ANGUNA",
+      "creator": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+      "gameId": "331a6ad9615492f5df0b3d99cfc5bb01cbaf9ce78906d24df4bb078c5c2c06f1",
+      "contentHash": "1df5a07fef92a526768333d041eec42d4efabfba1ad50e347b8146954ed07ff5",
+      "market": "3Nc3MCPVK1pkfaL5XyE9zHePs7kQnvcLZEKqPCutN5iA",
+      "mint": "B78Fx6hbDJ7v2trRvvveo8jXhkSB3d8wGc7MZ7isHj52",
+      "system": "gba",
+      "seedWallets": [
+        "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+        "79bnkSFGG4ptfcoyKocuK1FhRbvF2YWxLhQGUqaJia5T",
+        "BHaJYoscqM4wiBHE7G6Y7F3EF98kDrX5bTncpUisG4Xz"
+      ]
+    },
+    {
+      "deployed": true,
+      "licenseThreshold": 1000000000000,
+      "catalogId": "gba/blind-jump",
+      "title": "Blind Jump",
+      "symbol": "BLIND",
+      "creator": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+      "gameId": "66b11916d40bfba3d2bb9091f4eec54088a0fb90b2c759e23fa41fd6729040f1",
+      "contentHash": "597d11e93567f14f97ba4bc44bf41691b5e0fbac8dd169e6b559bb9086a1739d",
+      "market": "8iLwDKr5FGF1A2X8eM4S7r6VtSYSfcvSEXZKbYPNifNk",
+      "mint": "2xM8xWWwkD7QVHA639txi1d1koAL4hSz9tNWZ9UWdQbt",
+      "system": "gba",
+      "seedWallets": [
+        "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+        "79bnkSFGG4ptfcoyKocuK1FhRbvF2YWxLhQGUqaJia5T",
+        "BHaJYoscqM4wiBHE7G6Y7F3EF98kDrX5bTncpUisG4Xz"
+      ]
+    },
+    {
+      "deployed": true,
+      "licenseThreshold": 1000000000000,
+      "catalogId": "gba/green-memories",
+      "title": "Green Memories",
+      "symbol": "GREEN",
+      "creator": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+      "gameId": "e1e8c6f89ecf9035b50da558058289f2667c4fa0696f459111aa71ace740ce49",
+      "contentHash": "ccf5f3ac8cfbc5fa24113b4331dbc776df8bef31404e7eb614c529592173cb9f",
+      "market": "DozZPDMHEhuLBcmSku2n1A413wTZoyn8UCoRfGTcuS9C",
+      "mint": "6CpRz8Uac5JKNVWMagx4zpzRnkzRpsuWSezN3vzLyzT5",
+      "system": "gba",
+      "seedWallets": [
+        "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+        "79bnkSFGG4ptfcoyKocuK1FhRbvF2YWxLhQGUqaJia5T",
+        "BHaJYoscqM4wiBHE7G6Y7F3EF98kDrX5bTncpUisG4Xz"
+      ]
+    },
+    {
+      "deployed": true,
+      "licenseThreshold": 1000000000000,
+      "catalogId": "gba/apotris",
+      "title": "Apotris",
+      "symbol": "APOTRIS",
+      "creator": "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+      "gameId": "fbc6f942f112c2b90cda0ed361568ff51330c9e186df703e473bbaa9fb2e2bab",
+      "contentHash": "f868b6dc52603965f411cc2487ace66bd7481d2499e1ee2f2f48a0a47e58430a",
+      "market": "2HnBGnxwYr3e2N7FyHHwcwYZGhcnsPoRaAZhawjRyw6p",
+      "mint": "8LQ2igU4z6ekuXoBn9QxgeWv3WidDnokUx8g2HVtspuq",
+      "system": "gba",
+      "seedWallets": [
+        "HEY6W2WV2WXB5YRGE6Eh4SxjNNbMrxgdETYk26ZuKBLs",
+        "79bnkSFGG4ptfcoyKocuK1FhRbvF2YWxLhQGUqaJia5T",
+        "BHaJYoscqM4wiBHE7G6Y7F3EF98kDrX5bTncpUisG4Xz"
+      ]
+    }
+  ]
+}
