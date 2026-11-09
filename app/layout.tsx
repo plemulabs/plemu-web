@@ -11,6 +11,7 @@ import "./globals.css";
 import "./play-system.css";
 import "./handheld.css";
 import "./devnet.css";
+import "./market-terminal.css";
 import { SolanaWalletProvider } from "../providers/SolanaWalletProvider";
 import { DevnetShell } from "../components/devnet/shell";
 import { PrivacyPreferencesProvider } from "../components/privacy-preferences";

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useBrowserLibrary, systems, systemNames } from "./library-provider";
+import { Icon } from "./icon";
+import { marketDirectory, marketHref } from "../../lib/market-presentation";
 
 export function DevnetLibrary({ discover = false }: { discover?: boolean }) {
   const library = useBrowserLibrary();
@@ -29,10 +31,10 @@ export function DevnetLibrary({ discover = false }: { discover?: boolean }) {
           <p className="dn-kicker">
             {discover
               ? "Small worlds. Independent creators."
-              : "Your pocket arcade, opened up."}
+              : "A collection worth coming back to."}
           </p>
           <h1>
-            {discover ? "Find your next favorite." : "Good to have you here."}
+            {discover ? "Find your next favorite." : "Your next little escape."}
           </h1>
           <p>
             {discover
@@ -90,7 +92,7 @@ export function DevnetLibrary({ discover = false }: { discover?: boolean }) {
               No wallet needed to press play.
             </p>
             <Link className="dn-button" href="/play/gb-adjustris">
-              Play Adjustris <span aria-hidden="true">▶</span>
+              Play Adjustris <Icon name="play" size={15} />
             </Link>
           </div>
           <div className="dn-hero-art">
@@ -119,7 +121,7 @@ export function DevnetLibrary({ discover = false }: { discover?: boolean }) {
           <span>{list.length} games</span>
         </div>
         <label className="dn-search">
-          <span aria-hidden="true">⌕</span>
+          <Icon name="search" size={17} />
           <input
             aria-label="Search library"
             placeholder="Find a little adventure"
@@ -143,12 +145,12 @@ export function DevnetLibrary({ discover = false }: { discover?: boolean }) {
           aria-pressed={saved}
           onClick={() => setSaved((value) => !value)}
         >
-          ♡ Saved
+          <Icon name="heart" size={14} /> Saved
         </button>
       </div>
       {list.length === 0 ? (
         <div className="dn-empty">
-          <span aria-hidden="true">⌕</span>
+          <Icon name="search" size={28} />
           <h2>No games in this corner.</h2>
           <p>Try another name or give your filters a fresh start.</p>
           <button
@@ -173,7 +175,7 @@ export function DevnetLibrary({ discover = false }: { discover?: boolean }) {
                   loading="lazy"
                 />
                 <span className="dn-play-overlay" aria-hidden="true">
-                  ▶
+                  <Icon name="play" size={23} />
                 </span>
                 <span className="dn-system-tag">
                   {game.system.toUpperCase()}
@@ -189,9 +191,17 @@ export function DevnetLibrary({ discover = false }: { discover?: boolean }) {
                   aria-pressed={library.favorites.includes(game.id)}
                   onClick={() => library.toggleFavorite(game.id)}
                 >
-                  {library.favorites.includes(game.id) ? "♥" : "♡"}
+                  <Icon name="heart" size={17} />
                 </button>
               </div>
+              {marketDirectory.some(
+                ({ config }) => config.catalogId === game.id,
+              ) && (
+                <Link href={marketHref(game.id)} className="dn-game-market">
+                  <Icon name="market" size={12} /> Explore token market{" "}
+                  <Icon name="arrow" size={12} />
+                </Link>
+              )}
             </article>
           ))}
         </div>

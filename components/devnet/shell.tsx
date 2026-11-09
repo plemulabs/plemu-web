@@ -10,18 +10,19 @@ import {
   readBrowserSettings,
   subscribeBrowserSettings,
 } from "../../lib/browser-settings";
+import { Icon, type IconName } from "./icon";
 
-const navigation = [
-  { href: "/", label: "Library", icon: "▦" },
-  { href: "/market", label: "Market", icon: "◈" },
-  { href: "/packs", label: "Packs", icon: "▣" },
-  { href: "/discover", label: "Discover", icon: "✦" },
-  { href: "/create", label: "Create", icon: "+" },
-  { href: "/wallet", label: "Wallet", icon: "◇" },
-  { href: "/settings", label: "Settings", icon: "⚙" },
+const navigation: { href: string; label: string; icon: IconName }[] = [
+  { href: "/", label: "Library", icon: "library" },
+  { href: "/market", label: "Market", icon: "market" },
+  { href: "/packs", label: "Packs", icon: "pack" },
+  { href: "/discover", label: "Discover", icon: "compass" },
+  { href: "/create", label: "Create", icon: "create" },
+  { href: "/wallet", label: "Wallet", icon: "wallet" },
+  { href: "/settings", label: "Settings", icon: "settings" },
 ];
 export function DevnetShell({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "/";
   const { openPrivacy } = usePrivacyPreferences();
   const [reducedMotion, setReducedMotion] = useState(false);
   useEffect(() => {
@@ -48,6 +49,8 @@ export function DevnetShell({ children }: { children: React.ReactNode }) {
             </span>
             <span>play</span>
           </Link>
+          <div className="mt-header-divider" />
+          <span className="mt-header-tagline">Good games. Shared worlds.</span>
           <span className="dn-network">
             <i />
             Devnet
@@ -65,28 +68,39 @@ export function DevnetShell({ children }: { children: React.ReactNode }) {
                   href={item.href}
                   aria-current={
                     pathname === item.href ||
+                    (item.href !== "/" &&
+                      pathname.startsWith(item.href + "/")) ||
                     (item.href === "/" &&
                       ["/games", "/library"].includes(pathname))
                       ? "page"
                       : undefined
                   }
                 >
-                  <span aria-hidden="true">{item.icon}</span>
+                  <Icon name={item.icon} />
                   {item.label}
                 </Link>
               ))}
             </nav>
             <a className="dn-back" href="https://plemu.xyz">
-              Meet Plemu ↗
+              Meet Plemu <Icon name="external" size={14} />
             </a>
             <div className="dn-sidebar-note">
-              <span className="dn-pixel-friend" aria-hidden="true">
-                ▟▙
+              <span className="mt-sidebar-mark" aria-hidden="true">
+                <img
+                  src="/brand/plemu-pixel-face.png"
+                  alt=""
+                  width="64"
+                  height="64"
+                />
               </span>
               <small>
-                A little more play.
-                <br />A little less scrolling.
+                Find your people.
+                <br />
+                Keep playing.
               </small>
+              <Link href="/guide">
+                <Icon name="guide" size={15} /> Field guide
+              </Link>
             </div>
           </aside>
           <main id="main" className="dn-main">

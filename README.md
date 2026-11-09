@@ -22,7 +22,7 @@ Use HTTPS or secure localhost for wallet and Web Crypto features. The default pu
 
 - Library and Discover use the 27-title Seeker roster, with source hashes, creator credits, filters, favorites and local imports. Imported files stay in the current tab and require reimport after reload.
 - Browser players support GB/GBC, NES and GBA, plus an experimental SNES runtime. Save files are downloaded and imported explicitly.
-- Five native-SOL V1 markets provide integer buy/sell quotes, slippage controls, bounded confirmed history and role-gated protocol operations.
+- Five native-SOL V1 markets have dedicated market pages with integer buy/sell previews, slippage controls, partial confirmed-fill line/candle charts, trade history and role-gated protocol operations. The market directory reads indicative spot quotes with two market reads in flight; detail-page trading always uses a separate fresh snapshot.
 - Welcome and two active V2 progress pools support purchase, delivery and recovery. Reward counts use 50%/35%/15% odds for one/two/three entries. Selection prioritizes missing entries at request time, then fills from the remaining pool.
 - Paid packs use one buyer payment approval. A separate executor delivers to the stored buyer; manual claim/refund paths recover an existing draw.
 - Wallet balances cover 21 supported assets. Three mock-token faucets are available alongside an official native-SOL faucet link. Mock SOL cannot pay network fees.
@@ -38,6 +38,8 @@ New actions require a current Terms acknowledgment, fresh protocol state, an amo
 A wallet-scoped Web Lock prevents overlapping approvals. Exact signed bytes are persisted and read back before RPC submission or signed simulation. Confirmation checks and resubmission reuse that wire and signature. Explicit recovery reconnects are read-only; existing-draw recovery uses fresh original-buyer validation and does not require accepting new terms.
 
 See [protocol provenance](lib/devnet/PROVENANCE.md) and the [transaction boundary](lib/browser-transactions.ts).
+
+See [market pages and chart data](docs/markets.md) for routes, indicative-price calculations and the limits of the confirmed activity window.
 
 Fresh snapshots read independent account and rent data concurrently after network and program checks. Reads that depend on a confirmed slot remain ordered; chain state is not cached. Leaving a panel or changing wallets aborts its pending reads, and pack polling waits for the current read to finish.
 

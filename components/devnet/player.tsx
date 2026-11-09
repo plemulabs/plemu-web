@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { readBoundedResponse } from "../../lib/bounded-response";
+import { marketDirectory, marketHref } from "../../lib/market-presentation";
+import { Icon } from "./icon";
 import { useBrowserLibrary, systemNames } from "./library-provider";
 import {
   readBrowserSettings,
@@ -144,6 +146,12 @@ function BrowserPlayerSession({ slug }: { slug: string }) {
           {favorites.includes(game.id) ? "♥ Saved" : "♡ Save game"}
         </button>
       </div>
+      {marketDirectory.some(({ config }) => config.catalogId === game.id) && (
+        <Link className="dn-game-market" href={marketHref(game.id)}>
+          <Icon name="market" size={14} /> Explore {game.title} token market{" "}
+          <Icon name="arrow" size={14} />
+        </Link>
+      )}
       {game.system === "snes" && (
         <p className="dn-status">
           Experimental browser SNES player. This uses a pinned bsnes preview
