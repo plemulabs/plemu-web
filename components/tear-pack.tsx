@@ -130,7 +130,9 @@ export function TearPack({
           e.currentTarget.releasePointerCapture(e.pointerId);
       }}
       onPointerCancel={reset}
-      onLostPointerCapture={reset}
+      onLostPointerCapture={(event) => {
+        if (event.target === event.currentTarget) reset();
+      }}
     >
       {children}
       <span

@@ -336,4 +336,30 @@ describe("WalletHeaderButton", () => {
     fireEvent.mouseDown(screen.getByTestId("outside"));
     expect(screen.queryByText("Copy Address")).toBeNull();
   });
+  it("opens the wallet dialog from the connected pill without opening another connect prompt", () => {
+    vi.spyOn(usePlemuAuthModule, "usePlemuAuth").mockReturnValue({
+      ...defaultAuthState,
+      isConnected: true,
+      base58Address: "Dos7xNqW8vGkE6y2k8D2Vp9k1p4mQz8wR5tY7u3i4o5p",
+      shortAddress: "Dos7...4o5p",
+    });
+    const openWallet = vi.fn();
+    render(<WalletHeaderButton onOpenWallet={openWallet} />);
+    const trigger = screen.getByRole("button", { name: /Dos7\.\.\.4o5p/i });
+    expect(trigger.getAttribute("aria-haspopup")).toBe("dialog");
+    fireEvent.click(trigger);
+    expect(openWallet).toHaveBeenCalledOnce();
+    expect(mockSetVisible).not.toHaveBeenCalled();
+    expect(screen.queryByRole("menu")).toBeNull();
+  });
+
+  it("does not expose wallet tools before a wallet is connected", async () => {
+    const openWallet = vi.fn();
+    render(<WalletHeaderButton onOpenWallet={openWallet} />);
+    await act(async () =>
+      fireEvent.click(screen.getByRole("button", { name: /CONNECT WALLET/i })),
+    );
+    expect(openWallet).not.toHaveBeenCalled();
+    expect(mockSetVisible).toHaveBeenCalledWith(true);
+  });
 });

@@ -269,9 +269,7 @@ export function DevnetMarkets() {
           tokens have no monetary value. A token does not itself convey game
           files, copyright, equity or a commercial redistribution license.
         </p>
-        <Link href="/wallet">
-          Need test funds? <Icon name="arrow" size={15} />
-        </Link>
+        <span>Test funds are in your connected wallet control.</span>
       </div>
     </div>
   );

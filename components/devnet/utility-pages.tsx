@@ -21,11 +21,14 @@ import { usePrivacyPreferences } from "../privacy-preferences";
 import { useBrowserLibrary } from "./library-provider";
 import { TransactionReview, useDevnetTransaction } from "./transaction-review";
 import { DevnetFaucets } from "./faucets";
+import { CreatePreview } from "./create-preview";
 
 const explorerAddress = (address: string) =>
   `https://explorer.solana.com/address/${encodeURIComponent(address)}?cluster=devnet`;
 
-export function DevnetWallet() {
+export function DevnetWallet({
+  embedded = false,
+}: { embedded?: boolean } = {}) {
   const { connected, publicKey } = useWallet();
   const { walletName } = usePlemuAuth();
   const address = connected ? publicKey?.toBase58() || null : null;
@@ -83,7 +86,11 @@ export function DevnetWallet() {
       <div className="dn-page-heading">
         <div>
           <p className="dn-kicker">Your keys. Your wallet.</p>
-          <h1>A window into your wallet.</h1>
+          {embedded ? (
+            <h2>Your wallet</h2>
+          ) : (
+            <h1>A window into your wallet.</h1>
+          )}
           <p>
             Real balances on Solana Devnet. Test tokens have no monetary value.
           </p>
@@ -358,18 +365,9 @@ export function DevnetCreate() {
   }
   return (
     <>
-      <div className="dn-page-heading">
-        <div>
-          <p className="dn-kicker">A PLACE FOR YOUR NEXT IDEA</p>
-          <h1>Made something playful?</h1>
-          <p>
-            Sketch the details here. Public creator publishing and AI tools are
-            coming soon.
-          </p>
-        </div>
-      </div>
-      <section className="dn-panel">
-        <h2>Your local creator draft</h2>
+      <CreatePreview />
+      <details className="dn-panel dn-creator-draft">
+        <summary>Plan an idea locally</summary>
         <p>
           This form stays in page memory. Download its metadata as JSON; it does
           not upload game files, mint tokens, or create a public listing.
@@ -444,7 +442,7 @@ export function DevnetCreate() {
             {message}
           </p>
         )}
-      </section>
+      </details>
       <section className="dn-panel">
         <h2>Credit the people who made it.</h2>
         <p>

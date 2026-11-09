@@ -10,11 +10,13 @@ import { usePrivacyPreferences } from "./privacy-preferences";
 export interface WalletHeaderButtonProps {
   className?: string;
   onConnect?: () => void;
+  onOpenWallet?: () => void;
 }
 
 export const WalletHeaderButton: FC<WalletHeaderButtonProps> = ({
   className,
   onConnect,
+  onOpenWallet,
 }) => {
   const [mounted, setMounted] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -136,7 +138,9 @@ export const WalletHeaderButton: FC<WalletHeaderButtonProps> = ({
         aria-busy={!mounted}
         suppressHydrationWarning
       >
-        <span className="wallet-btn-icon">◇</span>
+        <span className="wallet-btn-icon" aria-hidden="true">
+          ◇
+        </span>
         <span>CONNECT WALLET</span>
       </button>
     );
@@ -161,9 +165,11 @@ export const WalletHeaderButton: FC<WalletHeaderButtonProps> = ({
       <button
         type="button"
         className="wallet-pill-button"
-        onClick={() => setDropdownOpen((prev) => !prev)}
-        aria-expanded={dropdownOpen}
-        aria-haspopup="true"
+        onClick={() =>
+          onOpenWallet ? onOpenWallet() : setDropdownOpen((prev) => !prev)
+        }
+        aria-expanded={onOpenWallet ? undefined : dropdownOpen}
+        aria-haspopup={onOpenWallet ? "dialog" : "menu"}
       >
         <span className="wallet-pill-status">
           <span className="wallet-pill-dot" />
@@ -184,7 +190,9 @@ export const WalletHeaderButton: FC<WalletHeaderButtonProps> = ({
             role="menuitem"
             onClick={handleCopy}
           >
-            <span className="wallet-dropdown-icon">📋</span>
+            <span className="wallet-dropdown-icon" aria-hidden="true">
+              📋
+            </span>
             <span>{copied ? "Copied!" : "Copy Address"}</span>
           </button>
 
@@ -196,7 +204,9 @@ export const WalletHeaderButton: FC<WalletHeaderButtonProps> = ({
             role="menuitem"
             onClick={() => setDropdownOpen(false)}
           >
-            <span className="wallet-dropdown-icon">↗</span>
+            <span className="wallet-dropdown-icon" aria-hidden="true">
+              ↗
+            </span>
             <span>View on Solana Explorer</span>
           </a>
 
@@ -207,7 +217,9 @@ export const WalletHeaderButton: FC<WalletHeaderButtonProps> = ({
             onClick={handleRefresh}
             disabled={isLoadingBalance}
           >
-            <span className="wallet-dropdown-icon">⟳</span>
+            <span className="wallet-dropdown-icon" aria-hidden="true">
+              ⟳
+            </span>
             <span>
               {isLoadingBalance ? "Refreshing..." : "Refresh Balances"}
             </span>
@@ -219,7 +231,9 @@ export const WalletHeaderButton: FC<WalletHeaderButtonProps> = ({
             role="menuitem"
             onClick={handleDisconnect}
           >
-            <span className="wallet-dropdown-icon">✕</span>
+            <span className="wallet-dropdown-icon" aria-hidden="true">
+              ✕
+            </span>
             <span>Disconnect</span>
           </button>
         </div>

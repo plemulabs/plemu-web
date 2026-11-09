@@ -6,6 +6,7 @@ import { WalletHeaderButton } from "../WalletHeaderButton";
 import { usePrivacyPreferences } from "../privacy-preferences";
 import { BrowserLibraryProvider } from "./library-provider";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import {
   readBrowserSettings,
   subscribeBrowserSettings,
@@ -18,13 +19,16 @@ const navigation: { href: string; label: string; icon: IconName }[] = [
   { href: "/packs", label: "Packs", icon: "pack" },
   { href: "/discover", label: "Discover", icon: "compass" },
   { href: "/create", label: "Create", icon: "create" },
-  { href: "/wallet", label: "Wallet", icon: "wallet" },
   { href: "/settings", label: "Settings", icon: "settings" },
 ];
+const WalletDialog = dynamic(() =>
+  import("./wallet-dialog").then((module) => module.WalletDialog),
+);
 export function DevnetShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname() ?? "/";
   const { openPrivacy } = usePrivacyPreferences();
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [walletOpen, setWalletOpen] = useState(false);
   useEffect(() => {
     setReducedMotion(readBrowserSettings().reducedMotion);
     return subscribeBrowserSettings((settings) =>
@@ -56,9 +60,10 @@ export function DevnetShell({ children }: { children: React.ReactNode }) {
             Devnet
           </span>
           <div className="dn-wallet">
-            <WalletHeaderButton />
+            <WalletHeaderButton onOpenWallet={() => setWalletOpen(true)} />
           </div>
         </header>
+        {walletOpen && <WalletDialog onClose={() => setWalletOpen(false)} />}
         <div className="dn-layout">
           <aside className="dn-sidebar">
             <nav aria-label="Main navigation">

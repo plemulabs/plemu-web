@@ -23,11 +23,13 @@ Use HTTPS or secure localhost for wallet and Web Crypto features. The default pu
 - Library and Discover use the 27-title Seeker roster, with source hashes, creator credits, filters, favorites and local imports. Imported files stay in the current tab and require reimport after reload.
 - Browser players support GB/GBC, NES and GBA, plus an experimental SNES runtime. Save files are downloaded and imported explicitly.
 - Five native-SOL V1 markets have dedicated market pages with integer buy/sell previews, slippage controls, partial confirmed-fill line/candle charts, trade history and role-gated protocol operations. The market directory reads indicative spot quotes with two market reads in flight; detail-page trading always uses a separate fresh snapshot.
-- Welcome and two active V2 progress pools support purchase, delivery and recovery. Reward counts use 50%/35%/15% odds for one/two/three entries. Selection prioritizes missing entries at request time, then fills from the remaining pool.
+- Packs follows the native collection layout: selectable foil packs, a free opening preview and actual catalog cartridges, with a separate welcome collection. Welcome and two active V2 progress pools support purchase, delivery and recovery. Reward counts use 50%/35%/15% odds for one/two/three entries. Selection prioritizes missing entries at request time, then fills from the remaining pool.
 - Paid packs use one buyer payment approval. A separate executor delivers to the stored buyer; manual claim/refund paths recover an existing draw.
-- Wallet balances cover 21 supported assets. Three mock-token faucets are available alongside an official native-SOL faucet link. Mock SOL cannot pay network fees.
-- Create edits local metadata drafts and exports JSON. Public publishing is unavailable.
+- The connected header wallet opens a dialog; there is no Wallet navigation section. Balances cover 21 supported assets. Three mock-token faucets are available alongside an official native-SOL faucet link. Mock SOL cannot pay network fees.
+- Create previews the coming-soon studio, with local build import and field-guide links. The optional local metadata draft still exports JSON. AI modding and public publishing are unavailable.
 - Settings includes sound/motion preferences, optional storage, credits and legal documents.
+
+See [Packs, Create and wallet access](docs/native-studio.md) for the preview boundary and supported flows.
 
 Active UI is in [components/devnet](components/devnet/). Earlier prototype modules remain for compatibility tests; their old destinations redirect to current routes. V4 pools are inactive. Devnet tokens have no monetary value.
 

@@ -215,3 +215,30 @@ describe.each(["switch", "disconnect"] as const)(
     });
   },
 );
+
+describe("free pack opening", () => {
+  it("keeps the visual preview separate from wallet reads and paid operations", () => {
+    state.address = null;
+    render(<DevnetPacks />);
+    fireEvent.click(screen.getByRole("button", { name: "Open free preview" }));
+    expect(
+      screen.getByText(
+        "Illustration only. No payment, draw, reward or receipt.",
+      ),
+    ).toBeTruthy();
+    expect(state.readPack).not.toHaveBeenCalled();
+    expect(state.readWelcome).not.toHaveBeenCalled();
+    expect(
+      screen.queryByRole("button", { name: "Preview token pack" }),
+    ).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "GameBoy" }));
+    expect(
+      screen.queryByText(
+        "Illustration only. No payment, draw, reward or receipt.",
+      ),
+    ).toBeNull();
+    expect(
+      screen.getByRole("button", { name: "Open free preview" }),
+    ).toBeTruthy();
+  });
+});

@@ -1,4 +1,4 @@
-import { DevnetWallet } from "../../components/devnet/utility-pages";
+import { redirect } from "next/navigation";
 export default function Wallet() {
-  return <DevnetWallet />;
+  redirect("/");
 }
